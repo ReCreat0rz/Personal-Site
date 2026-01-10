@@ -21,18 +21,54 @@ const BackgroundMusic = () => {
   };
 
   useEffect(() => {
-    // Attempt to autoplay might fail due to browser policies
-    // but the UI will reflect the initial paused state correctly.
     const audio = audioRef.current;
-    if (audio) {
-      audio.volume = 0.4;
-    }
+    if (!audio) return;
+
+    audio.volume = 0.4;
+
+    const startPlayback = () => {
+      audio.play()
+        .then(() => {
+          setIsPlaying(true);
+          // Remove listeners once successfully playing
+          removeInteractionListeners();
+        })
+        .catch(err => {
+          console.log("Initial autoplay blocked, waiting for interaction.");
+        });
+    };
+
+    const handleInteraction = () => {
+      startPlayback();
+    };
+
+    const removeInteractionListeners = () => {
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('touchstart', handleInteraction);
+      window.removeEventListener('keydown', handleInteraction);
+    };
+
+    // Initial attempt
+    startPlayback();
+
+    // Interaction listeners as fallback for browser policy
+    window.addEventListener('click', handleInteraction);
+    window.addEventListener('touchstart', handleInteraction);
+    window.addEventListener('keydown', handleInteraction);
+
+    return () => {
+      removeInteractionListeners();
+    };
   }, []);
 
   return (
     <div 
       className={`${styles.container} ${isPlaying ? styles.playing : ''}`} 
-      onClick={togglePlay}
+      onClick={(e) => {
+        // Stop propagation so the global listener doesn't trigger immediately if clicking the button specifically
+        e.stopPropagation();
+        togglePlay();
+      }}
       title={isPlaying ? "Pause Music" : "Play Music"}
     >
       <audio 
