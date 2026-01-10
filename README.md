@@ -6,8 +6,8 @@ To spin up a local instance of this system:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/ReCreat0rz/recreat0rz.github.io.git
-    cd recreat0rz.github.io
+    git clone https://github.com/ReCreat0rz/Personal-Blog.git
+    cd Personal-Blog
     ```
 
 2.  **Install Dependencies**:
