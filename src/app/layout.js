@@ -1,6 +1,7 @@
 import './globals.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BackgroundMusic from '../components/BackgroundMusic';
 import { Geist, Geist_Mono, Ubuntu_Mono } from 'next/font/google';
 
 const geistSans = Geist({
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <BackgroundMusic />
       </body>
     </html>
   )
