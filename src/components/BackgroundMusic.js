@@ -31,6 +31,8 @@ const BackgroundMusic = () => {
     const removeInteractionListeners = () => {
       window.removeEventListener('click', handleInteraction);
       window.removeEventListener('touchstart', handleInteraction);
+      window.removeEventListener('touchend', handleInteraction);
+      window.removeEventListener('mousedown', handleInteraction);
       window.removeEventListener('keydown', handleInteraction);
     };
 
@@ -40,6 +42,8 @@ const BackgroundMusic = () => {
     // Interaction listeners as fallback for browser policy
     window.addEventListener('click', handleInteraction);
     window.addEventListener('touchstart', handleInteraction);
+    window.addEventListener('touchend', handleInteraction);
+    window.addEventListener('mousedown', handleInteraction);
     window.addEventListener('keydown', handleInteraction);
 
     return () => {
