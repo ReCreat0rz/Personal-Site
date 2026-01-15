@@ -72,7 +72,7 @@ export default function PasswordGate({ children }) {
       <div className={styles.card}>
         <h1 className={styles.title}>ACCESS RESTRICTED</h1>
         <p className={styles.subtitle}>
-          This terminal is encrypted. Please provide the bypass key to view the contents.
+          In order to access the blog, Please provide the password to view the contents
         </p>
         
         <form onSubmit={handleSubmit} className={styles.form}>
@@ -81,7 +81,7 @@ export default function PasswordGate({ children }) {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter bypass key..."
+              placeholder="Enter Password"
               className={`${styles.input} ${error && !isLocked ? styles.error : ''}`}
               disabled={isLocked}
               autoFocus
@@ -93,15 +93,11 @@ export default function PasswordGate({ children }) {
             className={styles.button}
             disabled={isLocked || !password}
           >
-            {isLocked ? 'SYSTEM LOCKED' : 'BYPASS FIREWALL'}
+            {isLocked ? 'SYSTEM LOCKED' : 'Unlock Access'}
           </button>
         </form>
 
         <div className={styles.errorMessage}>{error}</div>
-
-        <div className={styles.attemptsLeft}>
-          ATTEMPTS: <span className={isLocked ? styles.locked : ''}>{attempts} / {MAX_ATTEMPTS}</span>
-        </div>
       </div>
     </div>
   );
