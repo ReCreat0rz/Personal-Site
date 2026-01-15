@@ -1,9 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import styles from './SystemGuard.module.css';
+import styles from './auth.module.css';
 
-export default function SystemGuard({ children }) {
+export default function Auth({ children }) {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [attempts, setAttempts] = useState(0);
