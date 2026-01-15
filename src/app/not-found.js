@@ -46,7 +46,7 @@ export default function NotFound() {
                 fontWeight: 'bold',
                 transition: 'all 0.2s ease',
             }}>
-                Return to System &rarr;
+                Back to Home &rarr;
             </Link>
         </div>
     );
