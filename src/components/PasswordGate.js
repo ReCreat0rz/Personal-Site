@@ -3,8 +3,6 @@
 import { useState, useEffect } from 'react';
 import styles from './PasswordGate.module.css';
 
-const MAX_ATTEMPTS = 3;
-
 export default function PasswordGate({ children }) {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -12,6 +10,9 @@ export default function PasswordGate({ children }) {
   const [error, setError] = useState('');
   const [isLocked, setIsLocked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Get max attempts from env or default to 3
+  const MAX_ATTEMPTS = parseInt(process.env.NEXT_PUBLIC_MAX_ATTEMPTS || '3');
 
   useEffect(() => {
     // Check if previously authenticated in this session
