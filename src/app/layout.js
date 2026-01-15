@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BackgroundMusic from '../components/BackgroundMusic';
+import PasswordGate from '../components/PasswordGate';
 import { Geist, Geist_Mono, Ubuntu_Mono } from 'next/font/google';
 
 const geistSans = Geist({
@@ -38,12 +39,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} ${ubuntuMono.variable}`}>
-        <Header />
-        <main style={{ minHeight: '100vh', paddingTop: '1rem' }}>
-          {children}
-        </main>
-        <Footer />
-        <BackgroundMusic />
+        <PasswordGate>
+          <Header />
+          <main style={{ minHeight: '100vh', paddingTop: '1rem' }}>
+            {children}
+          </main>
+          <Footer />
+          <BackgroundMusic />
+        </PasswordGate>
       </body>
     </html>
   )

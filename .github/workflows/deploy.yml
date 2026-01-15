@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BLOG_PASSWORD: ${{ secrets.BLOG_PASSWORD }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
