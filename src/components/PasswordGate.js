@@ -9,10 +9,12 @@ export default function PasswordGate({ children }) {
   const [attempts, setAttempts] = useState(0);
   const [error, setError] = useState('');
   const [isLocked, setIsLocked] = useState(false);
+  const [lockoutTime, setLockoutTime] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Get max attempts from env or default to 3
+  // Get settings from env or defaults
   const MAX_ATTEMPTS = parseInt(process.env.NEXT_PUBLIC_MAX_ATTEMPTS || '3');
+  const LOCKOUT_DURATION = 5 * 60 * 1000; // 5 minutes
 
   useEffect(() => {
     // Check if previously authenticated in this session
@@ -21,17 +23,35 @@ export default function PasswordGate({ children }) {
       setIsAuthenticated(true);
     }
 
-    // Check failed attempts from localStorage
-    const storedAttempts = parseInt(localStorage.getItem('password_attempts') || '0');
-    if (storedAttempts >= MAX_ATTEMPTS) {
-      setIsLocked(true);
-      setAttempts(storedAttempts);
-    } else {
-      setAttempts(storedAttempts);
-    }
-    
+    const checkLockout = () => {
+      const storedAttempts = parseInt(localStorage.getItem('password_attempts') || '0');
+      const lockoutUntil = parseInt(localStorage.getItem('password_lockout_until') || '0');
+      const now = Date.now();
+
+      if (lockoutUntil > now) {
+        setIsLocked(true);
+        setLockoutTime(Math.ceil((lockoutUntil - now) / 1000));
+        setAttempts(storedAttempts);
+      } else if (storedAttempts >= MAX_ATTEMPTS) {
+        // Time expired, reset attempts
+        localStorage.setItem('password_attempts', '0');
+        localStorage.removeItem('password_lockout_until');
+        setIsLocked(false);
+        setAttempts(0);
+        setError('');
+      } else {
+        setAttempts(storedAttempts);
+        setIsLocked(false);
+      }
+    };
+
+    checkLockout();
     setIsLoading(false);
-  }, []);
+
+    // Update countdown every second if locked
+    const timer = setInterval(checkLockout, 1000);
+    return () => clearInterval(timer);
+  }, [MAX_ATTEMPTS]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,7 +62,8 @@ export default function PasswordGate({ children }) {
     if (password === correctPassword) {
       setIsAuthenticated(true);
       sessionStorage.setItem('blog_authenticated', 'true');
-      localStorage.setItem('password_attempts', '0'); // Reset on success
+      localStorage.setItem('password_attempts', '0');
+      localStorage.removeItem('password_lockout_until');
       setError('');
     } else {
       const newAttempts = attempts + 1;
@@ -50,18 +71,26 @@ export default function PasswordGate({ children }) {
       localStorage.setItem('password_attempts', newAttempts.toString());
       
       if (newAttempts >= MAX_ATTEMPTS) {
+        const until = Date.now() + LOCKOUT_DURATION;
+        localStorage.setItem('password_lockout_until', until.toString());
         setIsLocked(true);
-        setError('Maximum attempts reached. Access denied.');
+        setLockoutTime(LOCKOUT_DURATION / 1000);
+        setError('Too many attempts. Access locked for 5 minutes.');
       } else {
         setError('Invalid password. Please try again.');
-        // Clear input on error
         setPassword('');
       }
     }
   };
 
+  const formatTime = (seconds) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
+
   if (isLoading) {
-    return <div className={styles.overlay} />; // Empty overlay while checking storage
+    return <div className={styles.overlay} />;
   }
 
   if (isAuthenticated) {
@@ -82,7 +111,7 @@ export default function PasswordGate({ children }) {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter Password"
+              placeholder={isLocked ? `Try again in ${formatTime(lockoutTime)}` : "Enter Password"}
               className={`${styles.input} ${error && !isLocked ? styles.error : ''}`}
               disabled={isLocked}
               autoFocus
@@ -94,7 +123,7 @@ export default function PasswordGate({ children }) {
             className={styles.button}
             disabled={isLocked || !password}
           >
-            {isLocked ? 'SYSTEM LOCKED' : 'Unlock Access'}
+            {isLocked ? 'LOCKED' : 'Unlock Access'}
           </button>
         </form>
 
