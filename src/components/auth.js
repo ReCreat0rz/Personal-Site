@@ -55,12 +55,7 @@ export default function Auth({ children }) {
 
     const correctPassword = process.env.NEXT_PUBLIC_BLOG_PASSWORD;
 
-    if (!correctPassword) {
-      setError('System Error: Security key not configured in build.');
-      return;
-    }
-
-    if (password.trim() === correctPassword.trim()) {
+    if (password.trim() === correctPassword?.trim()) {
       setIsAuthenticated(true);
       sessionStorage.setItem('blog_authenticated', 'true');
       localStorage.setItem('password_attempts', '0');
