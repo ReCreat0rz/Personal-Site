@@ -63,7 +63,7 @@ export default function About() {
                                 "Currently trapped in the iOS Application Exploitation Challenge Saga",
                                 "Says 'yeah why not' to game CTFs, AI Security CTFs, or blockchain CTFs like they're just optional DLC side-quests.",
                                 "Watches anime and reads manga for emotional support",
-                                "System Exception: Mornye is CUTE and BEAUTIFUL — any attempt to patch this will result in a global aesthetic collapse."
+                                "CRITICAL ALERT: Mornye's CUTE and BEAUTIFUL parameters have exceeded safety limits! 🚨 Unhackable levels of peak aesthetic detected... (˶˃ ᵕ ˂˶) .ᐟ.ᐟ"
                             ].map((item, index) => (
                                 <li key={index} style={{ marginBottom: '0.5rem', color: 'var(--text-color)' }}>
                                     {item}
