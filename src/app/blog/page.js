@@ -14,7 +14,7 @@ export default function Posts() {
                     textShadow: 'var(--glow-text)',
                     marginBottom: '0.5rem'
                 }}>
-                    All Posts
+                    Blog
                 </h1>
                 <div style={{
                     height: '2px',
