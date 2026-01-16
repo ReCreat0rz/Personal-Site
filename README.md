@@ -1,4 +1,4 @@
-# My Personal Blog
+# My Personal Site
 
 ## 🚀 Initialization (Run Locally)
 
@@ -6,8 +6,8 @@ To spin up a local instance of this system:
 
 1.  **Clone the Repository**:
     ```bash
-    git clone https://github.com/ReCreat0rz/Personal-Blog.git
-    cd Personal-Blog
+    git clone https://github.com/ReCreat0rz/Personal-Site.git
+    cd Personal-Site
     ```
 
 2.  **Install Dependencies**:
