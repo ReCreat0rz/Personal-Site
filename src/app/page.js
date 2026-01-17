@@ -8,10 +8,10 @@ export default function Home() {
     <div className="container">
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
         <Image
-          src="/mornye-home.jpg"
+          src="/mornye.jpg"
           alt="Mornye"
           width={320}
-          height={480}
+          height={453}
           style={{ width: '100%', maxWidth: '320px', height: 'auto', borderRadius: '12px' }}
           quality={100}
           priority

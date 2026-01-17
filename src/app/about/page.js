@@ -23,10 +23,10 @@ export default function About() {
             <div style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
                 <div style={{ flex: '0 0 320px' }}>
                     <Image
-                        src="/mornye.jpg"
+                        src="/mornye-home.jpg"
                         alt="Mornye"
                         width={320}
-                        height={453}
+                        height={480}
                         style={{
                             borderRadius: '12px',
                             objectFit: 'cover',
