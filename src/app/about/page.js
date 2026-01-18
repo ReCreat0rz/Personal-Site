@@ -50,7 +50,7 @@ export default function About() {
                         <p style={{ marginBottom: '1.5rem' }}>
                             Yo, welcome to my blog!
                             <br />
-                            I’ve been in cybersecurity for 3+ years, mainly doing offensive security—which is basically just <strong style={{ color: 'var(--accent-color)' }}>“IT’S NOT A BUG, IT’S A VULNERABILITY SPEEDRUN ANY% - DEV forgot to validate anything — new vuln unlocked.”</strong>
+                            I’m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> and <strong style={{ color: 'var(--accent-color)' }}>Blockchain Security</strong>, with Game and Smart Contract exploitation being the primary "main-story" content of this blog. I’ve found that the "Strategic Pivot" is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep the vibes immaculate while I hunt for the next vuln.
                         </p>
                         <p style={{ marginBottom: '2rem' }}>
                             Most of my learning comes from downloading any app, reversing it like a madman, and suddenly I'm stuck in how to understand the app works which takes a week, months or even years, also perform troubleshooting and debugging I never asked for — the true final boss.
