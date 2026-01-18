@@ -1,9 +1,6 @@
-import Link from 'next/link';
+'use client';
 
-export const metadata = {
-    title: 'Projects | ReCreat0rz',
-    description: 'Showcase of my technical projects and tools.',
-};
+import Link from 'next/link';
 
 export default function Projects() {
     const projects = [
