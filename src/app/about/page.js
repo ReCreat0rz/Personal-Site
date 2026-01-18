@@ -63,7 +63,7 @@ export default function About() {
                             {[
                                 "Plays FPS, RPG, MMORPG, and turn-based games because committing to one genre is too mainstream",
                                 "Watches anime and reads manga for emotional support",
-                                "ERROR: 0xSLEEP_DEP_FOUND — Attempting to reboot consciousness... Sleep is Powerful (but vulnerability research is eternal) 💤🔥",
+                                "ERROR: 0xSLEEP_DEP_FOUND — Attempting to reboot consciousness... Sleep is Powerful (but the pillow is a boss fight I’ve been kiting for eighty hours straight) 💤🔥",
                                 "CRITICAL ALERT: Mornye's CUTE and BEAUTIFUL parameters have exceeded safety limits! 🚨 Unhackable levels of peak aesthetic detected... (˶˃ ᵕ ˂˶) .ᐟ.ᐟ"
                             ].map((item, index) => (
                                 <li key={index} style={{ marginBottom: '0.5rem', color: 'var(--text-color)' }}>
