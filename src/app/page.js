@@ -44,7 +44,7 @@ export default function Home() {
 /_/ |_|\\___/\\____/_/   \\___/\\__,_/\\__/\\___/_/    /___/ 
 `}
           <span className="ascii-subtitle">
-            &lt; CTF Player | Penetration Tester &gt;
+            &lt; Research Madness Specialist | Pillow Boss-Fight Tactician | Game Content Enthusiast &gt;
           </span>
         </pre>
       </div>
