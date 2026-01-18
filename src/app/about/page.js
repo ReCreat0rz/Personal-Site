@@ -72,6 +72,66 @@ export default function About() {
                             ))}
                         </ul>
 
+                        <div style={{ marginTop: '2rem', overflowX: 'auto' }}>
+                            <table style={{
+                                width: '100%',
+                                borderCollapse: 'separate',
+                                borderSpacing: '0',
+                                border: '1px solid var(--border-color)',
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                fontFamily: 'var(--font-mono)',
+                                fontSize: '0.9rem'
+                            }}>
+                                <thead>
+                                    <tr style={{ background: 'rgba(255, 255, 255, 0.03)' }}>
+                                        <th style={{
+                                            padding: '1rem',
+                                            textAlign: 'left',
+                                            borderBottom: '1px solid var(--border-color)',
+                                            color: 'var(--primary-color)',
+                                            textShadow: 'var(--glow-text)'
+                                        }}>
+                                            Area of Focus / Research
+                                        </th>
+                                        <th style={{
+                                            padding: '1rem',
+                                            textAlign: 'left',
+                                            borderBottom: '1px solid var(--border-color)',
+                                            color: 'var(--primary-color)',
+                                            textShadow: 'var(--glow-text)'
+                                        }}>
+                                            Interesting Research
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style={{
+                                            padding: '1rem',
+                                            borderRight: '1px solid var(--border-color)',
+                                            verticalAlign: 'top',
+                                            color: 'var(--text-color)'
+                                        }}>
+                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                <li style={{ marginBottom: '0.5rem' }}>• Blockchain Security</li>
+                                                <li>• Game Reverse Engineering</li>
+                                            </ul>
+                                        </td>
+                                        <td style={{
+                                            padding: '1rem',
+                                            verticalAlign: 'top',
+                                            color: 'var(--text-color)'
+                                        }}>
+                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                <li>• ICS/OT Cybersecurity</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 </div>
             </div>
