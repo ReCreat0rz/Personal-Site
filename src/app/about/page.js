@@ -115,7 +115,7 @@ export default function About() {
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                                 <li style={{ marginBottom: '0.5rem' }}>• Blockchain Security</li>
-                                                <li>• Application Reverse Engineering</li>
+                                                <li>• Game Reverse Engineering</li>
                                             </ul>
                                         </td>
                                         <td style={{
