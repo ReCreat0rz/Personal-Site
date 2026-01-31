@@ -5,7 +5,7 @@ export default function Posts() {
     const allPostsData = getSortedPostsData();
 
     return (
-        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem' }}>
+        <div className="container" style={{ padding: '2rem' }}>
             <header style={{ marginBottom: '2.5rem' }}>
                 <h1 style={{
                     fontSize: '2.5rem',

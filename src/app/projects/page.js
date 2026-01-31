@@ -13,7 +13,7 @@ export default function Projects() {
     ];
 
     return (
-        <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '4rem 2rem' }}>
+        <div className="container" style={{ padding: '4rem 2rem' }}>
             <h1 style={{
                 marginBottom: '3rem',
                 fontSize: '2.5rem',
