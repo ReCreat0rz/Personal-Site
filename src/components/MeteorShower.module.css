@@ -1,0 +1,60 @@
+.meteorContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.meteor {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 1)
+  );
+  transform: rotate(-45deg);
+  opacity: 0;
+  filter: drop-shadow(0 0 6px rgba(105, 225, 255, 1));
+  animation: meteor var(--duration) linear infinite;
+  animation-delay: var(--delay);
+}
+
+.meteor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1), transparent);
+}
+
+@keyframes meteor {
+  0% {
+    top: -100px;
+    left: var(--left);
+    opacity: 0;
+    transform: rotate(var(--angle)) translateX(0);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    top: 100vh;
+    left: calc(var(--left) - 100vh); /* Move diagonally left */
+    opacity: 0;
+    transform: rotate(var(--angle)) translateX(-1000px);
+  }
+}
