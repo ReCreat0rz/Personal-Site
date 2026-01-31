@@ -13,13 +13,13 @@ export default function Home() {
         }}
       >
         <Image
-          src="/mornye.jpg"
+          src="/hero-home.jpg"
           alt="Mornye"
-          width={320}
-          height={453}
+          width={800}
+          height={450}
           style={{
             width: "100%",
-            maxWidth: "320px",
+            maxWidth: "800px",
             height: "auto",
             borderRadius: "12px",
           }}

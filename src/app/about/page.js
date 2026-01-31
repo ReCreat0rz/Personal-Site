@@ -23,20 +23,21 @@ export default function About() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
                 <div style={{ width: '100%' }}>
                     <Image
-                        src="/mornye-about-new.jpg"
+                        src="/hero-about.jpg"
                         alt="Mornye"
-                        width={1920}
-                        height={1080}
+                        width={400}
+                        height={566}
                         style={{
                             borderRadius: '12px',
                             objectFit: 'cover',
                             width: '100%',
+                            maxWidth: '400px',
+                            margin: '0 auto',
                             height: 'auto',
                             border: '1px solid var(--border-color)',
                             boxShadow: '0 0 20px rgba(192, 132, 252, 0.2)' // Soft purple cyber glow
                         }}
                         quality={100}
-                        unoptimized
                         priority
                     />
                 </div>
