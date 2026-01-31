@@ -20,8 +20,8 @@ export default function About() {
             }}>
                 About Me
             </h1>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
-                <div style={{ width: '100%' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '3rem', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+                <div style={{ flex: '0 0 320px', maxWidth: '100%' }}>
                     <Image
                         src="/mornye-about.jpg"
                         alt="Mornye"
@@ -31,8 +31,6 @@ export default function About() {
                             borderRadius: '12px',
                             objectFit: 'cover',
                             width: '100%',
-                            maxWidth: '100%',
-                            margin: '0 auto',
                             height: 'auto',
                             border: '1px solid var(--border-color)',
                             boxShadow: '0 0 20px rgba(192, 132, 252, 0.2)' // Soft purple cyber glow
@@ -41,7 +39,7 @@ export default function About() {
                         priority
                     />
                 </div>
-                <div style={{ width: '100%', fontFamily: 'var(--font-mono)' }}>
+                <div style={{ flex: '1', minWidth: '300px', fontFamily: 'var(--font-mono)' }}>
                     <h2 style={{
                         color: 'var(--accent-color)',
                         marginTop: 0,
