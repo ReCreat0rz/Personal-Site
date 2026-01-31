@@ -25,13 +25,13 @@ export default function About() {
                     <Image
                         src="/mornye-about.jpg"
                         alt="Mornye"
-                        width={400}
-                        height={566}
+                        width={800}
+                        height={450}
                         style={{
                             borderRadius: '12px',
                             objectFit: 'cover',
                             width: '100%',
-                            maxWidth: '280px',
+                            maxWidth: '100%',
                             margin: '0 auto',
                             height: 'auto',
                             border: '1px solid var(--border-color)',
