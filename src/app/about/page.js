@@ -25,8 +25,8 @@ export default function About() {
                     <Image
                         src="/mornye-about.jpg"
                         alt="Mornye"
-                        width={800}
-                        height={450}
+                        width={400}
+                        height={566}
                         style={{
                             borderRadius: '12px',
                             objectFit: 'cover',
