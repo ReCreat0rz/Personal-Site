@@ -20,24 +20,27 @@ export default function About() {
             }}>
                 About Me
             </h1>
-            <div style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                <div style={{ flex: '0 0 320px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                <div style={{ width: '100%' }}>
                     <Image
-                        src="/mornye-home.jpg"
+                        src="/mornye-about-new.jpg"
                         alt="Mornye"
-                        width={320}
-                        height={480}
+                        width={1920}
+                        height={1080}
                         style={{
                             borderRadius: '12px',
                             objectFit: 'cover',
+                            width: '100%',
+                            height: 'auto',
                             border: '1px solid var(--border-color)',
                             boxShadow: '0 0 20px rgba(192, 132, 252, 0.2)' // Soft purple cyber glow
                         }}
                         quality={100}
+                        unoptimized
                         priority
                     />
                 </div>
-                <div style={{ flex: '1', fontFamily: 'var(--font-mono)' }}>
+                <div style={{ width: '100%', fontFamily: 'var(--font-mono)' }}>
                     <h2 style={{
                         color: 'var(--accent-color)',
                         marginTop: 0,
