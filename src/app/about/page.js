@@ -31,7 +31,7 @@ export default function About() {
                             borderRadius: '12px',
                             objectFit: 'cover',
                             width: '100%',
-                            maxWidth: '400px',
+                            maxWidth: '280px',
                             margin: '0 auto',
                             height: 'auto',
                             border: '1px solid var(--border-color)',
