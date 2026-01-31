@@ -23,7 +23,7 @@ export default function About() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
                 <div style={{ width: '100%' }}>
                     <Image
-                        src="/hero-about.jpg"
+                        src="/mornye-about.jpg"
                         alt="Mornye"
                         width={400}
                         height={566}

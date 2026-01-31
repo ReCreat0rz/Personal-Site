@@ -13,7 +13,7 @@ export default function Home() {
         }}
       >
         <Image
-          src="/hero-home.jpg"
+          src="/mornye-home.jpg"
           alt="Mornye"
           width={800}
           height={450}
