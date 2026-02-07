@@ -16,14 +16,14 @@ export default function Projects() {
             description: "",
             github: "https://www.hacktrace.id/home/hacktrace_ranges",
             linkText: "Hacktrace Ranges",
-            tags: ["Windows", "Easy", "CTF"]
+            tags: ["Windows", "Easy"]
         },
         {
             title: "Rocket",
             description: "",
             github: "https://ctf.hacktrace-ranges.id/",
             linkText: "CTF Hacktrace Ranges",
-            tags: ["Windows", "Easy", "CTF"]
+            tags: ["Windows", "Easy"]
         }
     ];
 
