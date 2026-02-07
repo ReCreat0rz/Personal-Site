@@ -32,14 +32,6 @@ export default function Experience() {
             ]
         },
         {
-            company: 'Indonesia - Remote',
-            role: 'Machine Maker',
-            period: 'April 2024 – July 2024',
-            description: [
-                'Developed "Easy-Difficulty" Windows Lab Machines named Syringe and Rocket.'
-            ]
-        },
-        {
             company: 'Indonesia - Onsite',
             role: 'Junior Vulnerability Analyst',
             period: 'June 2022 – May 2023',

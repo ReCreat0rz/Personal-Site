@@ -9,6 +9,18 @@ export default function Projects() {
             description: "Bug Bounty Hunting Tools Automation for Recon by ReCreat0rz",
             github: "https://github.com/ReCreat0rz/BBHT_Automation",
             tags: ["Bug Bounty", "Automation", "Recon", "Bash"]
+        },
+        {
+            title: "Syringe",
+            description: "Easy-Difficulty Windows Machine",
+            github: "https://www.hacktrace.id/home/hacktrace_ranges",
+            tags: ["Windows", "Easy", "CTF"]
+        },
+        {
+            title: "Rocket",
+            description: "Easy-Difficulty Windows Machine",
+            github: "https://ctf.hacktrace-ranges.id/",
+            tags: ["Windows", "Easy", "CTF"]
         }
     ];
 
