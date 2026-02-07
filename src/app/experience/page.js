@@ -8,7 +8,7 @@ export default function Experience() {
     const workExperience = [
         {
             company: 'Indonesia - Hybrid',
-            role: 'Senior Penetration Tester',
+            role: 'Cyber Security Consultant I',
             period: 'October 2025 – Present',
             description: [
                 'Performed 140+ penetration testing projects across Web, API, Mobile (Android & iOS), and Infrastructure, with 40% focused on mobile applications.',
