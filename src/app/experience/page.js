@@ -7,28 +7,32 @@ export const metadata = {
 export default function Experience() {
     const workExperience = [
         {
-            company: 'Confidential',
+            company: 'Indonesia - Hybrid',
             role: 'Senior Penetration Tester',
             period: 'October 2025 – Present',
             description: [
-                'Performed 140+ penetration testing projects across Web, API, Mobile, and Infrastructure.',
-                'Focused on mobile applications for major banking institutions in Indonesia.',
-                'Led Junior Penetration Testers during team activities.',
-                'Assisted clients with vulnerability mitigation and detailed reporting based on industry standards (CVSS v3, OWASP).'
+                'Performed 140+ penetration testing projects across Web, API, Mobile (Android & iOS), and Infrastructure, with 40% focused on mobile applications.',
+                'Conducted penetration testing services for major banking institutions with a primary focus on mobile applications.',
+                'Lead Junior Penetration Tester during penetration testing activities.',
+                'Assisted the client in implementing vulnerability mitigation recommendations.',
+                'Created detailed reports of penetration testing results using CVSS v3 and OWASP scoring methodologies.',
+                'Presented penetration testing findings to clients in a clear and professional manner.',
+                'Performed retest on previously identified vulnerabilities after fixing, and prepared the final reports outlining retesting results.'
             ]
         },
         {
-            company: 'Confidential',
+            company: 'Indonesia - Onsite',
             role: 'Junior Penetration Tester',
             period: 'July 2023 – October 2025',
             description: [
-                'Managed 100+ projects following OWASP WSTG and MSTG standards.',
-                'Presented high and critical risk findings to clients.',
-                'Conducted retests to verify vulnerability remediation.'
+                'Handled 100+ penetration testing projects, including Web, API, Mobile Applications (Android & iOS), and Infrastructure,based on OWASP WSTG and MSTG standards.',
+                'Created detailed reports of penetration testing results using CVSS v3 and OWASP scoring methodologies.',
+                'Presented penetration testing findings to clients in a clear and professional manner.',
+                'Performed retest on previously identified vulnerabilities after fixing, and prepared the final reports outlining retestingresults.'
             ]
         },
         {
-            company: 'Confidential',
+            company: 'Indonesia - Remote',
             role: 'Machine Maker',
             period: 'April 2024 – July 2024',
             description: [
@@ -36,29 +40,16 @@ export default function Experience() {
             ]
         },
         {
-            company: 'Confidential',
-            role: 'Vulnerability Analyst, Jr',
+            company: 'Indonesia - Onsite',
+            role: 'Junior Vulnerability Analyst',
             period: 'June 2022 – May 2023',
             description: [
-                'Performed white-box initial and follow-up scans on tens of thousands of assets.',
-                'Analyzed scanning failures and escalated issues to Tier 2 vulnerability management.',
-                'Conducted black-box penetration testing on web and mobile application binaries.'
+                'Performed initial and follow-up scans on tens of thousands of assets using a white-box approach.',
+                'Analyzed root causes for scanning failures on specific IP addresses and escalated unresolved issues to Vulnerability Assessment Tier 2 for further investigation.',
+                'Compiled detailed reports on asset scanning results for documentation.',
+                'Conducted penetration testing using a black-box approach to assess web & mobile application (binary checking).',
+                'Prepared comprehensive reports outlining findings, severity, and recommendations from penetration testing activities.'
             ]
-        }
-    ];
-
-    const certifications = [
-        { title: 'OffSec Certified Professional+ (OSCP+)', period: 'Sept 2025 – Sept 2028' },
-        { title: 'OffSec Certified Professional (OSCP)', period: 'Issued Sept 2025' },
-        { title: 'Certified Ethical Hacker (CEH) - EC-Council', period: 'Mar 2020 – Mar 2023' }
-    ];
-
-    const education = [
-        {
-            school: 'BINUS University',
-            degree: 'Bachelor of Science in Information Systems Audit',
-            period: 'Aug 2018 – Apr 2022',
-            gpa: '3.47 / 4.00'
         }
     ];
 
@@ -84,38 +75,6 @@ export default function Experience() {
                         </div>
                     </div>
                 ))}
-            </div>
-
-            <div className={styles.gridContainer}>
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>Certifications</h2>
-                    <div className={styles.cardsGrid}>
-                        {certifications.map((cert, index) => (
-                            <div key={index} className={styles.card}>
-                                <div className={styles.cardHeader}>
-                                    <span className={styles.certIcon}>🛡️</span>
-                                    <span className={styles.cardPeriod}>{cert.period}</span>
-                                </div>
-                                <h3 className={styles.cardTitle}>{cert.title}</h3>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                <section className={styles.section}>
-                    <h2 className={styles.sectionTitle}>Education</h2>
-                    {education.map((edu, index) => (
-                        <div key={index} className={styles.card}>
-                            <div className={styles.cardHeader}>
-                                <span className={styles.eduIcon}>🎓</span>
-                                <span className={styles.cardPeriod}>{edu.period}</span>
-                            </div>
-                            <h3 className={styles.cardTitle}>{edu.school}</h3>
-                            <p className={styles.cardSubtitle}>{edu.degree}</p>
-                            <div className={styles.gpaBadge}>GPA: {edu.gpa}</div>
-                        </div>
-                    ))}
-                </section>
             </div>
         </div>
     );
