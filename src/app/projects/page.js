@@ -14,7 +14,7 @@ export default function Projects() {
         {
             title: "Syringe",
             description: "",
-            github: "https://www.hacktrace.id/home/hacktrace_ranges",
+            github: "https://www.hacktrace-ranges.id/login",
             linkText: "Hacktrace Ranges",
             tags: ["Windows", "Easy"]
         },
