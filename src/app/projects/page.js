@@ -9,7 +9,7 @@ export default function Projects() {
             description: "Bug Bounty Hunting Tools Automation for Recon by ReCreat0rz",
             github: "https://github.com/ReCreat0rz/BBHT_Automation",
             linkText: "GitHub",
-            tags: ["Bug Bounty", "Automation", "Recon", "Bash"]
+            tags: ["Bug Bounty", "Bash"]
         },
         {
             title: "Syringe",
