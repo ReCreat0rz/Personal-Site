@@ -8,18 +8,21 @@ export default function Projects() {
             title: "BBHT_Automation",
             description: "Bug Bounty Hunting Tools Automation for Recon by ReCreat0rz",
             github: "https://github.com/ReCreat0rz/BBHT_Automation",
+            linkText: "GitHub",
             tags: ["Bug Bounty", "Automation", "Recon", "Bash"]
         },
         {
             title: "Syringe",
             description: "Easy-Difficulty Windows Machine",
             github: "https://www.hacktrace.id/home/hacktrace_ranges",
+            linkText: "Hacktrace Ranges",
             tags: ["Windows", "Easy", "CTF"]
         },
         {
             title: "Rocket",
             description: "Easy-Difficulty Windows Machine",
             github: "https://ctf.hacktrace-ranges.id/",
+            linkText: "CTF Hacktrace Ranges",
             tags: ["Windows", "Easy", "CTF"]
         }
     ];
@@ -53,7 +56,7 @@ export default function Projects() {
                                 rel="noopener noreferrer"
                                 className="github-link"
                             >
-                                GitHub →
+                                {project.linkText} →
                             </Link>
                         </div>
                         
