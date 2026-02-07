@@ -46,7 +46,7 @@ export default function About() {
                         fontSize: '1.8rem',
                         marginBottom: '1.5rem'
                     }}>
-                        recreat0rz
+                        rei
                     </h2>
                     <div style={{ lineHeight: '1.8', color: 'var(--text-color)' }}>
                         <p style={{ marginBottom: '1.5rem' }}>
