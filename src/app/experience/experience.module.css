@@ -1,19 +1,26 @@
 .title {
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     letter-spacing: -0.05em;
     font-family: var(--font-mono);
     color: var(--primary-color);
     text-shadow: var(--glow-text);
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .timeline {
     position: relative;
-    padding-left: 2rem;
-    margin-bottom: 4rem;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .timeline::before {
@@ -29,7 +36,13 @@
 
 .timelineItem {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .timelineItem {
+        margin-bottom: 2rem;
+    }
 }
 
 .timelineDot {
@@ -44,12 +57,27 @@
     border: 2px solid var(--bg-color);
 }
 
+@media (max-width: 768px) {
+    .timelineDot {
+        left: -1.85rem;
+        top: 0.4rem;
+        width: 10px;
+        height: 10px;
+    }
+}
+
 .timelineContent {
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border-color);
     border-radius: 12px;
     padding: 1.5rem;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .timelineContent {
+        padding: 1rem;
+    }
 }
 
 .timelineContent:hover {
@@ -72,6 +100,12 @@
     margin: 0;
     color: var(--primary-color);
     font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    .role {
+        font-size: 1.1rem;
+    }
 }
 
 .period {

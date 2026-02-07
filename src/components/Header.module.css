@@ -56,21 +56,34 @@
     .header {
         padding: 0 1rem;
         height: 60px;
-        /* Search slight reduction */
     }
 
     .logo {
         font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    .nav {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-left: 1rem;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
     }
 
     .nav ul {
-        gap: 1rem;
-        /* Reduce gap */
+        gap: 0.5rem;
+        padding: 0.5rem 0;
     }
 
     .nav a {
-        font-size: 0.9rem;
-        padding: 0.5rem;
-        /* Better touch target */
+        font-size: 0.85rem;
+        padding: 0.4rem 0.6rem;
+        white-space: nowrap;
+        background: rgba(0, 243, 255, 0.05);
+        border: 1px solid rgba(0, 243, 255, 0.1);
+        border-radius: 4px;
     }
 }
