@@ -115,10 +115,21 @@ export default function About() {
                                             verticalAlign: 'top',
                                             color: 'var(--text-color)'
                                         }}>
-                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li style={{ marginBottom: '0.5rem' }}>• Blockchain Security</li>
-                                                <li>• Game Reverse Engineering</li>
-                                            </ul>
+                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                                <div>
+                                                    <p style={{ margin: '0 0 0.5rem 0', color: 'var(--accent-color)', fontWeight: 'bold' }}>Main Quest:</p>
+                                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                        <li style={{ marginBottom: '0.2rem' }}>• Blockchain Security</li>
+                                                        <li>• iOS Reverse Engineering</li>
+                                                    </ul>
+                                                </div>
+                                                <div>
+                                                    <p style={{ margin: '0 0 0.5rem 0', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Optional Quest:</p>
+                                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                        <li>• Game Reverse Engineering</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </td>
                                         <td style={{
                                             padding: '1rem',
