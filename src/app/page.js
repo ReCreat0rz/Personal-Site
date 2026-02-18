@@ -64,8 +64,7 @@ export default function Home() {
 /_/ |_|\\___/\\____/_/   \\___/\\__,_/\\__/\\___/_/    /___/ 
 `}
           <span className="ascii-subtitle">
-            &lt; Research Madness Specialist | Dakimakura Boss-Fight Tactician |
-            Game Content Enthusiast &gt;
+            Wanna be Researcher
           </span>
         </pre>
       </div>
