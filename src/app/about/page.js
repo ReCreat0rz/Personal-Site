@@ -52,12 +52,11 @@ export default function About() {
                         <p style={{ marginBottom: '1.5rem' }}>
                             Yo, welcome to my blog!
                             <br />
-                            I’m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> and <strong style={{ color: 'var(--accent-color)' }}>Blockchain Security</strong>, with iOS and Smart Contract Exploitation being the primary "main-story" content of this blog. I’ve found that the "Strategic Pivot" is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
+                            I’m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> with iOS being the primary "main-story" content of this blog. I’ve found that the "Strategic Pivot" is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
                         </p>
                         <p style={{ marginBottom: '2rem' }}>
                             Most of my learning is an unintentional deep-dive: I'll download an app for "quick recon," start reversing it like a absolute madman, and suddenly I'm trapped in a 3 weeks or 1~12 months research loop trying to figure out why the binary behaves like a sentient puzzle box—complete with troubleshooting and debugging sessions I definitely never requested <span style={{ color: 'var(--primary-color)' }}>- THE TRUE FINAL BOSS!!!</span>
                             <br /><br />
-                            Even Smart Contract security can feel like a high-level raid with a 0% drop rate sometimes—it’s deceptively difficult, but watching the entire logic burst into absolute flames during a successful exploit is the only dopamine hit I need.
                         </p>
                         
                         <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Lore Dump About Me:</p>
@@ -119,14 +118,14 @@ export default function About() {
                                                 <div>
                                                     <p style={{ margin: '0 0 0.5rem 0', color: 'var(--accent-color)', fontWeight: 'bold' }}>Main Quest:</p>
                                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li style={{ marginBottom: '0.2rem' }}>• Blockchain Security</li>
                                                         <li>• iOS Reverse Engineering</li>
                                                     </ul>
                                                 </div>
                                                 <div>
                                                     <p style={{ margin: '0 0 0.5rem 0', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Optional Quest:</p>
                                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li>• Game Reverse Engineering</li>
+                                                        <li style={{ marginBottom: '0.2rem' }}>• Game Reverse Engineering</li>
+                                                        <li>• Blockchain Security</li>
                                                     </ul>
                                                 </div>
                                             </div>
