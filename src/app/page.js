@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PostCard from "../components/PostCard";
 import TerminalHero from "@/components/TerminalHero";
+import TypingAnimation from "@/components/TypingAnimation";
 
 export default function Home() {
   return (
@@ -64,18 +65,18 @@ export default function Home() {
 /_/ |_|\\___/\\____/_/   \\___/\\__,_/\\__/\\___/_/    /___/ 
 `}
           <span className="ascii-subtitle">
-            Wanna be Researcher
+            <TypingAnimation words={["Reverser", "Wanna be Security Researcher"]} />
           </span>
         </pre>
       </div>
-      <TerminalHero />
 
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           gap: "2rem",
-          marginTop: "2rem",
+          marginTop: "1rem",
+          marginBottom: "1rem",
         }}
       >
         <a
@@ -145,6 +146,9 @@ export default function Home() {
           </svg>
         </a>
       </div>
+
+      <TerminalHero />
+
     </div>
   );
 }
