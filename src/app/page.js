@@ -65,7 +65,7 @@ export default function Home() {
 /_/ |_|\\___/\\____/_/   \\___/\\__,_/\\__/\\___/_/    /___/ 
 `}
           <span className="ascii-subtitle">
-            <TypingAnimation words={["Reverser", "Wanna be Security Researcher"]} />
+            <TypingAnimation words={["Reverse Engineer", "Wanna be Security Researcher"]} />
           </span>
         </pre>
       </div>
