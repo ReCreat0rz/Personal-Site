@@ -118,7 +118,7 @@ export default function About() {
                                                 <div>
                                                     <p style={{ margin: '0 0 0.5rem 0', color: 'var(--accent-color)', fontWeight: 'bold' }}>Main Quest:</p>
                                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li>• iOS Reverse Engineering</li>
+                                                        <li>• iOS Reverse Engineering (e.g application like games, etc)</li>
                                                     </ul>
                                                 </div>
                                                 <div>
