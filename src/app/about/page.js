@@ -124,7 +124,7 @@ export default function About() {
                                                 <div>
                                                     <p style={{ margin: '0 0 0.5rem 0', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Optional Quest:</p>
                                                     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li>• Blockchain Security</li>
+                                                        <li>• Smart Contract Audit</li>
                                                     </ul>
                                                 </div>
                                             </div>
