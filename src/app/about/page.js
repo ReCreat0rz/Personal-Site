@@ -48,15 +48,17 @@ export default function About() {
                     }}>
                         rei
                     </h2>
+                    <div style={{ display: 'flex', gap: '1rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
+                        <Image src="/badges/OSCP.png" alt="OSCP" width={80} height={80} style={{ objectFit: 'contain' }} />
+                        <Image src="/badges/OSCP+.png" alt="OSCP+" width={80} height={80} style={{ objectFit: 'contain' }} />
+                        <Image src="/badges/image_CPSA.png" alt="CPSA" width={80} height={80} style={{ objectFit: 'contain' }} />
+                        <Image src="/badges/image_CRT.png" alt="CRT" width={80} height={80} style={{ objectFit: 'contain' }} />
+                    </div>
                     <div style={{ lineHeight: '1.8', color: 'var(--text-color)' }}>
                         <p style={{ marginBottom: '1.5rem' }}>
                             Yo, welcome to my blog!
                             <br />
-                            I’m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> with iOS being the primary "main-story" content of this blog. I’ve found that the "Strategic Pivot" is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
-                        </p>
-                        <p style={{ marginBottom: '2rem' }}>
-                            Most of my learning is an unintentional deep-dive: I'll download an app for "quick recon," start reversing it like a absolute madman, and suddenly I'm trapped in a 3 weeks or 1~12 months research loop trying to figure out why the binary behaves like a sentient puzzle box—complete with troubleshooting and debugging sessions I definitely never requested <span style={{ color: 'var(--primary-color)' }}>- THE TRUE FINAL BOSS!!!</span>
-                            <br /><br />
+                            I{"'"}m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Smart Contract Audit</strong> or <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> being the primary {`"`}main-story{`"`} content of this blog. I{"'"}ve found that the {`"`}Strategic Pivot{`"`} is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
                         </p>
                         
                         <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Lore Dump About Me:</p>
@@ -114,20 +116,10 @@ export default function About() {
                                             verticalAlign: 'top',
                                             color: 'var(--text-color)'
                                         }}>
-                                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                                                <div>
-                                                    <p style={{ margin: '0 0 0.5rem 0', color: 'var(--accent-color)', fontWeight: 'bold' }}>Main Quest:</p>
-                                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li>• iOS Reverse Engineering (e.g application like games, etc)</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <p style={{ margin: '0 0 0.5rem 0', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Optional Quest:</p>
-                                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                        <li>• Smart Contract Audit</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                <li style={{ marginBottom: '0.3rem' }}>• Smart Contract Audit</li>
+                                                <li>• iOS Reverse Engineering (e.g application like games, etc)</li>
+                                            </ul>
                                         </td>
                                         <td style={{
                                             padding: '1rem',
