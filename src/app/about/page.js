@@ -97,37 +97,18 @@ export default function About() {
                                         }}>
                                             Area of Focus / Research
                                         </th>
-                                        <th style={{
-                                            padding: '1rem',
-                                            textAlign: 'left',
-                                            borderBottom: '1px solid var(--border-color)',
-                                            color: 'var(--primary-color)',
-                                            textShadow: 'var(--glow-text)'
-                                        }}>
-                                            Interesting Research
-                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td style={{
                                             padding: '1rem',
-                                            borderRight: '1px solid var(--border-color)',
                                             verticalAlign: 'top',
                                             color: 'var(--text-color)'
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                                 <li style={{ marginBottom: '0.3rem' }}>• Smart Contract Audit</li>
-                                                <li>• iOS Reverse Engineering (e.g application like games, etc)</li>
-                                            </ul>
-                                        </td>
-                                        <td style={{
-                                            padding: '1rem',
-                                            verticalAlign: 'top',
-                                            color: 'var(--text-color)'
-                                        }}>
-                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li>• ICS/OT Cybersecurity</li>
+                                                <li>• Offensive ICS/OT</li>
                                             </ul>
                                         </td>
                                     </tr>
