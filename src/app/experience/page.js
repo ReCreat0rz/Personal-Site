@@ -11,13 +11,13 @@ export default function Experience() {
             role: 'Cyber Security Consultant I',
             period: 'October 2025 – Present',
             description: [
-                'Performed 140+ penetration testing projects across Web, API, Mobile (Android & iOS), and Infrastructure, with 40% focused on mobile applications.',
-                'Conducted penetration testing services for major banking institutions with a primary focus on mobile applications.',
-                'Lead Junior Penetration Tester during penetration testing activities.',
-                'Assisted the client in implementing vulnerability mitigation recommendations.',
-                'Created detailed reports of penetration testing results using CVSS v3 and OWASP scoring methodologies.',
-                'Presented penetration testing findings to clients in a clear and professional manner.',
-                'Performed retest on previously identified vulnerabilities after fixing, and prepared the final reports outlining retesting results.'
+                'Led 180+ penetration testing engagements across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security.',
+                'Implemented 1 phishing simulation campaign for a financial institution to evaluate and enhance organizational security awareness.',
+                'Executed security assessments for financial institutions, uncovering critical vulnerabilities in mobile banking applications.',
+                'Mentored 3 junior penetration testers throughout security assessment lifecycles to achieve zero false positives and 100% deliverable accuracy.',
+                'Led client engineering teams through remediation execution to successfully remediate 80% of identified security findings.',
+                'Delivered technical security findings, exploitation pathways, and remediation roadmaps to engineering teams, decreasing remediation time by 70%.',
+                'Directed an internal knowledge-sharing session on the 8ksec ClearRoute iOS reverse engineering challenge, illustrating static analysis and proxy detection bypass techniques.'
             ]
         },
         {
@@ -25,10 +25,9 @@ export default function Experience() {
             role: 'Junior Penetration Tester',
             period: 'July 2023 – October 2025',
             description: [
-                'Handled 100+ penetration testing projects, including Web, API, Mobile Applications (Android & iOS), and Infrastructure,based on OWASP WSTG and MSTG standards.',
-                'Created detailed reports of penetration testing results using CVSS v3 and OWASP scoring methodologies.',
-                'Presented penetration testing findings to clients in a clear and professional manner.',
-                'Performed retest on previously identified vulnerabilities after fixing, and prepared the final reports outlining retestingresults.'
+                'Drove 100+ end-to-end penetration testing projects across Web, API, Mobile, and Infrastructure domains following OWASP WSTG and MSTG standards.',
+                'Authored penetration testing reports detailing exploitation findings and mitigation guidelines.',
+                'Partnered with engineering units on vulnerability patching strategies, shortening the time-to-fix for security flaws by 80%.'
             ]
         },
         {
@@ -36,11 +35,10 @@ export default function Experience() {
             role: 'Junior Vulnerability Analyst',
             period: 'June 2022 – May 2023',
             description: [
-                'Performed initial and follow-up scans on tens of thousands of assets using a white-box approach.',
-                'Analyzed root causes for scanning failures on specific IP addresses and escalated unresolved issues to Vulnerability Assessment Tier 2 for further investigation.',
-                'Compiled detailed reports on asset scanning results for documentation.',
-                'Conducted penetration testing using a black-box approach to assess web & mobile application (binary checking).',
-                'Prepared comprehensive reports outlining findings, severity, and recommendations from penetration testing activities.'
+                'Orchestrated automated and white-box vulnerability assessments across 1,000+ enterprise-wide assets.',
+                'Troubleshot root causes for network scan failures across targeted IP ranges, establishing structured escalation workflows to Tier-2 Vulnerability Analysts.',
+                'Performed black-box penetration testing on 1 web application and applied reverse engineering (binary analysis) on 2 mobile applications.',
+                'Formulated reports detailing exploit paths, vulnerability severity, and immediate remediation steps.'
             ]
         }
     ];
