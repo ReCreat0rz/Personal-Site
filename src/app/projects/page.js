@@ -5,13 +5,6 @@ import Link from 'next/link';
 export default function Projects() {
     const projects = [
         {
-            title: "BBHT_Automation",
-            description: "Bug Bounty Hunting Tools Automation for Recon by ReCreat0rz",
-            github: "https://github.com/ReCreat0rz/BBHT_Automation",
-            linkText: "GitHub",
-            tags: ["Bug Bounty", "Bash"]
-        },
-        {
             title: "Syringe",
             description: "",
             github: "https://www.hacktrace-ranges.id/login",

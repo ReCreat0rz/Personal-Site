@@ -58,7 +58,7 @@ export default function About() {
                         <p style={{ marginBottom: '1.5rem' }}>
                             Yo, welcome to my blog!
                             <br />
-                            I{"'"}m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Smart Contract Audit</strong> or <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> being the primary {`"`}main-story{`"`} content of this blog. I{"'"}ve found that the {`"`}Strategic Pivot{`"`} is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
+                            I{"'"}m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> being the primary {`"`}main-story{`"`} content of this blog. I{"'"}ve found that the {`"`}Strategic Pivot{`"`} is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
                         </p>
                         
                         <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Lore Dump About Me:</p>
@@ -95,7 +95,7 @@ export default function About() {
                                             color: 'var(--primary-color)',
                                             textShadow: 'var(--glow-text)'
                                         }}>
-                                            Area of Focus / Research
+                                            Research Interest
                                         </th>
                                     </tr>
                                 </thead>
@@ -107,8 +107,7 @@ export default function About() {
                                             color: 'var(--text-color)'
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li style={{ marginBottom: '0.3rem' }}>• Smart Contract Audit</li>
-                                                <li>• Offensive ICS/OT</li>
+                                                <li>• Cyber Physical Systems</li>
                                             </ul>
                                         </td>
                                     </tr>
