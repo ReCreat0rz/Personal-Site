@@ -107,7 +107,9 @@ export default function About() {
                                             color: 'var(--text-color)'
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li>• Cyber Physical Systems</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• Cyber Physical Systems</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• iOS Security</li>
+                                                <li>• Blockchain Security</li>
                                             </ul>
                                         </td>
                                     </tr>
