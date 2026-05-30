@@ -11,11 +11,11 @@ export default function Experience() {
             role: 'Cyber Security Consultant I',
             period: 'October 2025 – Present',
             description: [
-                'Led 180+ penetration testing engagements across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security.',
+                'Led 180+ penetration testing engagements across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security.',
                 'Implemented 1 phishing simulation campaign for a financial institution to evaluate and enhance organizational security awareness.',
                 'Executed security assessments for financial institutions, uncovering critical vulnerabilities in mobile banking applications.',
                 'Mentored 3 junior penetration testers throughout security assessment lifecycles to achieve zero false positives and 100% deliverable accuracy.',
-                'Led client engineering teams through remediation execution to successfully remediate 80% of identified security findings.',
+                'Led client engineering teams through remediation execution to successfully remediate 70% of identified security findings.',
                 'Delivered technical security findings, exploitation pathways, and remediation roadmaps to engineering teams, decreasing remediation time by 70%.',
                 'Directed an internal knowledge-sharing session on the 8ksec ClearRoute iOS reverse engineering challenge, illustrating static analysis and proxy detection bypass techniques.'
             ]
@@ -27,7 +27,7 @@ export default function Experience() {
             description: [
                 'Drove 100+ end-to-end penetration testing projects across Web, API, Mobile, and Infrastructure domains following OWASP WSTG and MSTG standards.',
                 'Authored penetration testing reports detailing exploitation findings and mitigation guidelines.',
-                'Partnered with engineering units on vulnerability patching strategies, shortening the time-to-fix for security flaws by 80%.'
+                'Partnered with engineering units on vulnerability patching strategies, shortening the time-to-fix for security flaws by 70%.'
             ]
         },
         {
