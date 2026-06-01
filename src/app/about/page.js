@@ -108,7 +108,7 @@ export default function About() {
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                                 <li style={{ marginBottom: '0.3rem' }}>• Cyber Physical Systems</li>
-                                                <li>• iOS Security</li>
+                                                <li>• IoT Security</li>
                                             </ul>
                                         </td>
                                     </tr>
