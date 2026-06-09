@@ -11,7 +11,7 @@ export default function Experience() {
             role: 'Cyber Security Consultant I',
             period: 'October 2025 – Present',
             description: [
-                'Led 180+ penetration testing engagements across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security.',
+                'Led 150+ penetration testing engagements across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security.',
                 'Implemented 1 phishing simulation campaign for a financial institution to evaluate and enhance organizational security awareness.',
                 'Executed security assessments for financial institutions, uncovering critical vulnerabilities in mobile banking applications.',
                 'Mentored 3 junior penetration testers throughout security assessment lifecycles to achieve zero false positives and 100% deliverable accuracy.',
