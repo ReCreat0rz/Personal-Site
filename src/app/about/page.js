@@ -56,9 +56,7 @@ export default function About() {
                     </div>
                     <div style={{ lineHeight: '1.8', color: 'var(--text-color)' }}>
                         <p style={{ marginBottom: '1.5rem' }}>
-                            Yo, welcome to my blog!
-                            <br />
-                            I{"'"}m currently deep in the rabbit hole of <strong style={{ color: 'var(--accent-color)' }}>Reverse Engineering</strong> being the primary {`"`}main-story{`"`} content of this blog. I{"'"}ve found that the {`"`}Strategic Pivot{`"`} is the best meta for research—if one topic starts feeling like a soft-lock, I just switch to another to mitigate frustration and keep my mental stack from overflowing while I descend into a recursive spiral of total mental instability chasing the next vuln.
+                            Cybersecurity Professional with 4+ years of experience and 150+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
                         </p>
                         
                         <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Lore Dump About Me:</p>
@@ -74,6 +72,18 @@ export default function About() {
                                 </li>
                             ))}
                         </ul>
+
+                        <div style={{ marginTop: '2rem', overflowX: 'auto' }}>
+                            <h3 style={{ color: 'var(--primary-color)', marginBottom: '1rem', textShadow: 'var(--glow-text)' }}>Education</h3>
+                            <div style={{ marginBottom: '1.5rem', border: '1px solid var(--border-color)', borderRadius: '8px', padding: '1rem' }}>
+                                <h4 style={{ color: 'var(--accent-color)', margin: '0 0 0.5rem 0' }}>Bachelor of Science (BS) in Information Systems Audit</h4>
+                                <p style={{ margin: '0 0 0.5rem 0', color: 'var(--text-secondary)' }}>BINUS University | August 2018 – April 2022</p>
+                                <ul style={{ listStyle: 'none', padding: 0, margin: 0, color: 'var(--text-color)', fontSize: '0.9rem' }}>
+                                    <li style={{ marginBottom: '0.3rem' }}>• Graduated with a Cumulative Grade Point Average of 3.47 / 4.00.</li>
+                                    <li>• Core Coursework & Academic Focus: Penetration Testing, Information Systems Audit, IT Governance, Information System Investigation, and Risk Management.</li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <div style={{ marginTop: '2rem', overflowX: 'auto' }}>
                             <table style={{
@@ -109,6 +119,49 @@ export default function About() {
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                                                 <li style={{ marginBottom: '0.3rem' }}>• Cyber Physical Systems Security</li>
                                                 <li>• IoT Security</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div style={{ marginTop: '2rem', overflowX: 'auto' }}>
+                            <table style={{
+                                width: '100%',
+                                borderCollapse: 'separate',
+                                borderSpacing: '0',
+                                border: '1px solid var(--border-color)',
+                                borderRadius: '8px',
+                                overflow: 'hidden',
+                                fontFamily: 'var(--font-mono)',
+                                fontSize: '0.9rem'
+                            }}>
+                                <thead>
+                                    <tr style={{ background: 'rgba(255, 255, 255, 0.03)' }}>
+                                        <th style={{
+                                            padding: '1rem',
+                                            textAlign: 'left',
+                                            borderBottom: '1px solid var(--border-color)',
+                                            color: 'var(--primary-color)',
+                                            textShadow: 'var(--glow-text)'
+                                        }}>
+                                            Certifications
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style={{
+                                            padding: '1rem',
+                                            verticalAlign: 'top',
+                                            color: 'var(--text-color)'
+                                        }}>
+                                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Registered Penetration Tester (CRT), Issued April 2026, Expires April 2029</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Practitioner Security Analyst (CPSA), Issued April 2026, Expires April 2029</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• OffSec Certified Professional+ (OSCP+), Issued September 2025, Expires September 2028</li>
+                                                <li>• OffSec Certified Professional (OSCP), Issued September 2025</li>
                                             </ul>
                                         </td>
                                     </tr>
