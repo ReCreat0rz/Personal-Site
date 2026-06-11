@@ -40,7 +40,7 @@ export default function MeteorShower() {
 
   useEffect(() => {
     const isMobile = window.innerWidth < 768;
-    const meteorCount = isMobile ? 18 : 35;
+    const meteorCount = isMobile ? 8 : 15;
 
     const newMeteors = Array.from({ length: meteorCount }).map((_, i) => {
       const variant = METEOR_VARIANTS[i % METEOR_VARIANTS.length];
@@ -59,7 +59,7 @@ export default function MeteorShower() {
       };
     });
 
-    const starCount = isMobile ? 40 : 80;
+    const starCount = isMobile ? 20 : 40;
     const newStars = Array.from({ length: starCount }).map((_, i) => ({
       id: i,
       left: Math.random() * 100 + '%',
@@ -70,7 +70,9 @@ export default function MeteorShower() {
       twinkleDelay: Math.random() * 5 + 's',
     }));
 
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- client-only decorative content
     setMeteors(newMeteors);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- client-only decorative content
     setStars(newStars);
   }, []);
 

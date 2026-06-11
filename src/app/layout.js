@@ -3,10 +3,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BackgroundMusic from '../components/BackgroundMusic';
 import MeteorShower from '@/components/MeteorShower';
-import { Geist, Fira_Code } from 'next/font/google';
+import { Inter, Fira_Code } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
 });
 
@@ -31,7 +31,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${firaCode.variable}`}>
+      <body className={`${inter.variable} ${firaCode.variable}`}>
         <Header />
         <MeteorShower />
         <main style={{ minHeight: '100vh', paddingTop: '1rem', position: 'relative', zIndex: 1 }}>
