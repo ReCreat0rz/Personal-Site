@@ -40,12 +40,12 @@ export default async function Post({ params }) {
                         {postData.tags.map(tag => (
                             <span key={tag} style={{
                                 fontSize: '0.8rem',
-                                background: 'rgba(192, 132, 252, 0.15)',
+                                background: 'rgba(129, 140, 248, 0.15)',
                                 padding: '4px 10px',
                                 borderRadius: '12px',
                                 color: 'var(--primary-color)',
                                 fontFamily: 'var(--font-mono)',
-                                border: '1px solid rgba(192, 132, 252, 0.3)'
+                                border: '1px solid rgba(129, 140, 248, 0.3)'
                             }}>
                                 #{tag}
                             </span>
@@ -93,7 +93,7 @@ export default async function Post({ params }) {
             <div style={{
                 marginTop: '4rem',
                 paddingTop: '2rem',
-                borderTop: '1px solid #333',
+                borderTop: '1px solid #1a2740',
                 display: 'flex',
                 justifyContent: 'space-between',
                 flexWrap: 'wrap',

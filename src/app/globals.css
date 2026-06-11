@@ -1,53 +1,53 @@
 :root {
-  /* Cyber Physical Theme */
-  --bg-color: #050505;
-  /* Deepest Void Black */
-  --card-bg: #0f1016;
-  /* Dark Tech Slate */
+  /* Celestial Theme */
+  --bg-color: #040810;
+  /* Deep Navy Black */
+  --card-bg: #0a1020;
+  /* Dark Navy Slate */
 
-  /* Text - High Contrast & Readable ("User Friendly") */
-  --text-color: #e2e8f0;
-  /* Soft White/Ice Gray for body */
-  --text-primary: #ffffff;
-  /* Pure White for headers */
-  --text-secondary: #94a3b8;
-  /* Slate scale for metadata */
+  /* Text - High Contrast & Readable */
+  --text-color: #d4dff0;
+  /* Cooler Ice White */
+  --text-primary: #f0f4ff;
+  /* Blue-tinted Pure White */
+  --text-secondary: #7b93b8;
+  /* Muted Steel Blue */
 
-  /* Cyber Accents */
-  --primary-color: #00f3ff;
-  /* Neon Cyan */
-  --accent-color: #7c3aed;
-  /* Electric Violet */
-  --success-color: #00ff9d;
-  /* Matrix Green */
-  --warning-color: #f59e0b;
-  /* Amber Alert */
+  /* Celestial Accents */
+  --primary-color: #60a5fa;
+  /* Celestial Blue */
+  --accent-color: #818cf8;
+  /* Soft Periwinkle */
+  --success-color: #34d399;
+  /* Soft Teal */
+  --warning-color: #fbbf24;
+  /* Warm Amber */
 
-  --border-color: #1e293b;
-  /* Subtle structural borders */
-  --cyber-border: #00f3ff;
+  --border-color: #1a2740;
+  /* Blue-tinted Border */
+  --cyber-border: #60a5fa;
   /* Glowing border color */
 
   /* Glow Effects */
-  --glow-primary: 0 0 20px rgba(0, 243, 255, 0.15);
-  --glow-text: 0 0 10px rgba(0, 243, 255, 0.3);
+  --glow-primary: 0 0 20px rgba(96, 165, 250, 0.15);
+  --glow-text: 0 0 10px rgba(96, 165, 250, 0.3);
 
   /* Modern clean fonts */
-  --font-sans: var(--font-fira-code), var(--font-geist-sans), 'Rajdhani', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: var(--font-fira-code), var(--font-geist-mono), 'JetBrains Mono', monospace;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: var(--font-fira-code), monospace;
 
   --api-width: 800px;
   --header-height: 70px;
 
   /* Celestial Starfield Background */
   --bg-gradient: 
-    radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
-    radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0)),
-    radial-gradient(circle at 50% 0%, #1a1b26 0%, #050505 80%);
+    radial-gradient(1px 1px at 20px 30px, #c8daf0, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #e0eaff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 50px 160px, #b0c4e0, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #d0e0ff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #e8f0ff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 160px 120px, #c0d4f0, rgba(0,0,0,0)),
+    radial-gradient(circle at 50% 0%, #0a1628 0%, #040810 80%);
   --bg-size: 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 200px 200px, 100% 100%;
 }
 
@@ -132,7 +132,7 @@ h2 {
   /* Electric Purple */
   margin-top: 2.5rem;
   /* More space before sections */
-  border-bottom: 1px solid rgba(124, 58, 237, 0.3);
+  border-bottom: 1px solid rgba(129, 140, 248, 0.3);
   /* Subtle purple underline */
   padding-bottom: 0.5rem;
 }
@@ -210,13 +210,13 @@ pre code {
 /* Inline code styling */
 :not(pre)>code {
   font-family: var(--font-mono);
-  background: rgba(0, 243, 255, 0.1);
+  background: rgba(96, 165, 250, 0.1);
   /* Transparent Cyan tint */
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   color: var(--primary-color);
   font-size: 0.85em;
-  border: 1px solid rgba(0, 243, 255, 0.2);
+  border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
 /* Scrollbar */

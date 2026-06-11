@@ -106,12 +106,12 @@ export default function Projects() {
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    background: rgba(0, 243, 255, 0.1);
+                    background: rgba(96, 165, 250, 0.1);
                     padding: 0.5rem 1rem;
                     border-radius: 6px;
                     font-size: 0.9rem;
                     color: var(--primary-color);
-                    border: 1px solid rgba(0, 243, 255, 0.2);
+                    border: 1px solid rgba(96, 165, 250, 0.2);
                     font-weight: bold;
                     white-space: nowrap;
                 }
@@ -129,10 +129,10 @@ export default function Projects() {
                 .tag {
                     font-size: 0.75rem;
                     padding: 0.2rem 0.6rem;
-                    background: rgba(124, 58, 237, 0.1);
+                    background: rgba(129, 140, 248, 0.1);
                     color: var(--accent-color);
                     border-radius: 4px;
-                    border: 1px solid rgba(124, 58, 237, 0.2);
+                    border: 1px solid rgba(129, 140, 248, 0.2);
                     font-family: var(--font-mono);
                     font-weight: bold;
                 }

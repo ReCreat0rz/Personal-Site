@@ -5,7 +5,7 @@
 .searchInput {
     width: 100%;
     padding: 0.875rem 1rem;
-    background: #0f0a16;
+    background: #0a1020;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     color: #fff;
@@ -16,7 +16,7 @@
 
 .searchInput:focus {
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.1);
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.1);
 }
 
 /* Filter Toggle - Hidden on desktop */
@@ -46,7 +46,7 @@
 
 .filterSelect {
     padding: 0.5rem 0.75rem;
-    background: #0f0a16;
+    background: #0a1020;
     border: 1px solid var(--border-color);
     border-radius: 6px;
     color: #fff;
@@ -132,7 +132,7 @@
 
 .pageButton:not(:disabled):hover {
     border-color: var(--primary-color);
-    background: rgba(147, 51, 234, 0.1);
+    background: rgba(129, 140, 248, 0.1);
 }
 
 .pageInfo {

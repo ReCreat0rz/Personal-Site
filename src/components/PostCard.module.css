@@ -13,9 +13,9 @@
 
 .card:hover {
     transform: translateY(-2px);
-    background: #1e1b2e;
+    background: #0f1a30;
     border-color: var(--primary-color);
-    box-shadow: 0 8px 30px rgba(147, 51, 234, 0.15);
+    box-shadow: 0 8px 30px rgba(129, 140, 248, 0.15);
 }
 
 .title {
@@ -56,10 +56,10 @@
     font-size: 0.75rem;
     color: var(--primary-color);
     font-family: var(--font-mono);
-    background: rgba(147, 51, 234, 0.1);
+    background: rgba(129, 140, 248, 0.1);
     padding: 2px 8px;
     border-radius: 4px;
-    border: 1px solid rgba(147, 51, 234, 0.3);
+    border: 1px solid rgba(129, 140, 248, 0.3);
 }
 
 .excerpt {
@@ -82,18 +82,18 @@
 
 .tag {
     font-size: 0.7rem;
-    background: rgba(0, 243, 255, 0.08);
+    background: rgba(96, 165, 250, 0.08);
     padding: 3px 10px;
     border-radius: 20px;
     color: var(--accent-color);
     font-family: var(--font-mono);
-    border: 1px solid rgba(0, 243, 255, 0.2);
+    border: 1px solid rgba(96, 165, 250, 0.2);
     transition: all 0.2s ease;
 }
 
 .card:hover .tag {
-    background: rgba(0, 243, 255, 0.12);
-    border-color: rgba(0, 243, 255, 0.4);
+    background: rgba(96, 165, 250, 0.12);
+    border-color: rgba(96, 165, 250, 0.4);
 }
 
 @media (max-width: 768px) {
