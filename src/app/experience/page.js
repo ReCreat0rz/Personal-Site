@@ -44,7 +44,7 @@ export default function Experience() {
             role: 'Hopping on Test Benches and Car Hacking',
             period: 'July 2025',
             description: [
-                'Acquired foundational knowledge of vehicle hardware interfaces and protocols, including CAN, UART, JTAG, and SPI, as well as vehicle attack surfaces such as Rollback Attacks and unauthorized CAN exploitation.'
+                'Acquired foundational knowledge of vehicle hardware interfaces and protocols, including CAN, UART, JTAG, and SPI, as well as vehicle attack surfaces such as rollback attacks and unauthorized CAN exploitation.'
             ]
         }
     ];
