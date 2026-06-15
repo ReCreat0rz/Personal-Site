@@ -117,8 +117,8 @@ export default function About() {
                                             color: 'var(--text-color)'
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li style={{ marginBottom: '0.3rem' }}>• CPS Security</li>
-                                                <li>• Vehicle Security</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• Vehicle Security</li>
+                                                <li>• iOS Security (side-gig)</li>
                                             </ul>
                                         </td>
                                     </tr>
