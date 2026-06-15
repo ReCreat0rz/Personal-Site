@@ -36,7 +36,7 @@ export default function Experience() {
             role: 'Car Hacking Village',
             period: 'March 2026',
             description: [
-                'Acquired foundational knowledge of the CAN protocol utilized in the Car Hacking Village, and potential attack surfaces related to electric vehicle (EV) charger.'
+                'Revisited the CAN protocol and explored potential attack surfaces related to electric vehicle charging systems.'
             ]
         },
         {
@@ -44,7 +44,7 @@ export default function Experience() {
             role: 'Hopping on Test Benches and Car Hacking',
             period: 'July 2025',
             description: [
-                'Acquired foundational knowledge of vehicle hardware interfaces and protocols, including CAN, UART, JTAG, and SPI, as well as vehicle attack surfaces such as rollback attacks and unauthorized CAN exploitation.'
+                'Learned about vehicle hardware interfaces and protocols such as CAN, UART, JTAG, and SPI, as well as vehicle attack surfaces including rollback attacks and unauthorized CAN exploitation.'
             ]
         }
     ];
