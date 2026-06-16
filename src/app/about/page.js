@@ -58,20 +58,6 @@ export default function About() {
                         <p style={{ marginBottom: '1.5rem' }}>
                             Cybersecurity Professional with 4+ years of experience and 150+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
                         </p>
-                        
-                        <p style={{ marginBottom: '1rem', color: 'var(--text-secondary)', fontWeight: 'bold' }}>Lore Dump About Me:</p>
-                        <ul style={{ listStyle: 'disc', paddingLeft: '1.5rem', marginBottom: '1.5rem' }}>
-                            {[
-                                "Plays FPS, RPG, MMORPG, and turn-based games because committing to one genre is too mainstream",
-                                "Watches anime and reads manga for emotional support",
-                                "ERROR: 0xSLEEP_DEP_FOUND — Attempting to reboot consciousness... Sleep is Powerful (but the dakimakura is a boss fight I’ve been kiting for eight hours straight) 💤🔥",
-                                "CRITICAL ALERT: Mornye's CUTE and BEAUTIFUL parameters have exceeded safety limits! 🚨 Unhackable levels of peak aesthetic detected... (˶˃ ᵕ ˂˶) .ᐟ.ᐟ"
-                            ].map((item, index) => (
-                                <li key={index} style={{ marginBottom: '0.5rem', color: 'var(--text-color)' }}>
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
 
                         <div style={{ marginTop: '2rem', overflowX: 'auto' }}>
                             <h3 style={{ color: 'var(--primary-color)', marginBottom: '1rem', textShadow: 'var(--glow-text)' }}>Education</h3>
