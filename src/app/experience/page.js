@@ -11,7 +11,7 @@ export default function Experience() {
             role: 'Cyber Security Consultant I',
             period: 'July 2023 - Present',
             description: [
-                'Mentored 3 junior penetration testers throughout security assessment lifecycles to achieve zero false positives and 100% deliverable accuracy.',
+                'Led 3 junior penetration testers throughout security assessment lifecycles to achieve zero false positives and 100% deliverable accuracy.',
                 'Engineered an entry-level internal Windows penetration testing lab simulating 4 distinct attack vectors (brute-force, default credentials, RCE, scheduled tasks), successfully exploited by 165 participants with 73 achieving full SYSTEM compromise.',
                 'Developed a Hacktrace Independence Day Competition (HIDC) 2024 Windows challenge lab combining CVE-2024-27198 (TeamCity auth bypass to RCE) with registry permission abuse for privilege escalation.',
                 'Executed comprehensive security assessments for financial institutions, uncovering high-severity vulnerabilities in mobile banking applications, including transaction logic flaws (admin fee/payment reductions, negative transfer, Insecure Direct Object References via Someone\'s Account Number) in Transfer and Top Up & Bills Feature.',
