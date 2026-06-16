@@ -16,7 +16,7 @@ export default function Experience() {
                 'Developed a Hacktrace Independence Day Competition (HIDC) 2024 Windows challenge lab combining CVE-2024-27198 (TeamCity auth bypass to RCE) with registry permission abuse for privilege escalation.',
                 'Executed comprehensive security assessments for financial institutions, uncovering high-severity vulnerabilities in mobile banking applications, including transaction logic flaws (admin fee/payment reductions, negative transfer, Insecure Direct Object References via Someone\'s Account Number) in Transfer and Top Up & Bills Feature.',
                 'Directed an internal knowledge-sharing session on the 8ksec ClearRoute iOS reverse engineering challenge, demonstrating static analysis and proxy detection bypass techniques.',
-                'Implemented 1 phishing simulation campaign for a financial institution to evaluate and enhance organizational security awareness.'
+                'Designed and executed a phishing simulation campaign for a financial institution to evaluate security awareness, achieving an 86% awareness success rate, with a 14% vulnerability rate (11% credential compromised, 3% clicked phishing links).'
             ]
         },
         {
