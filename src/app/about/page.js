@@ -144,10 +144,10 @@ export default function About() {
                                             color: 'var(--text-color)'
                                         }}>
                                             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Registered Penetration Tester (CRT), Issued April 2026, Expires April 2029</li>
-                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Practitioner Security Analyst (CPSA), Issued April 2026, Expires April 2029</li>
-                                                <li style={{ marginBottom: '0.3rem' }}>• OffSec Certified Professional+ (OSCP+), Issued September 2025, Expires September 2028</li>
-                                                <li>• OffSec Certified Professional (OSCP), Issued September 2025</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Registered Penetration Tester (CRT)</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• CREST Practitioner Security Analyst (CPSA)</li>
+                                                <li style={{ marginBottom: '0.3rem' }}>• OffSec Certified Professional+ (OSCP+)</li>
+                                                <li>• OffSec Certified Professional (OSCP)</li>
                                             </ul>
                                         </td>
                                     </tr>
