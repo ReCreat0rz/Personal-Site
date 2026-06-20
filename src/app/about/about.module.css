@@ -1,0 +1,479 @@
+/* ═══════════════════════════════════════════════════
+   RPG Character Profile — Celestial Theme
+   ═══════════════════════════════════════════════════ */
+
+/* ── Main Card ── */
+.profileCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: var(--glow-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.profileCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), var(--accent-color), var(--primary-color), transparent);
+    opacity: 0.6;
+}
+
+/* ── Screen Header ── */
+.screenHeader {
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.screenHeaderLabel {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+/* ── Profile Grid ── */
+.profileGrid {
+    display: grid;
+    grid-template-columns: 200px 1.2fr 1.2fr;
+    gap: 2rem;
+}
+
+/* ── Section Labels ── */
+.sectionLabel {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    text-shadow: var(--glow-text);
+}
+
+/* ── Left Column ── */
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.avatarFrame {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.1);
+}
+
+.avatarFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nameBlock {
+    text-align: center;
+}
+
+.nameBlock h1 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin: 0;
+    letter-spacing: -0.02em;
+    text-shadow: var(--glow-text);
+}
+
+.nameBlock p {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    margin: 0.25rem 0 0 0;
+}
+
+/* ── XP Bar ── */
+.xpSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.xpHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.xpLevel {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.xpValue {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+}
+
+.xpBar {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+.xpFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    border-radius: 3px;
+    transition: width 1.2s ease-out;
+}
+
+.xpSubtitle {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+/* ── Certification Cards ── */
+.certsSection {
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.certCard {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.certCard:last-child {
+    margin-bottom: 0;
+}
+
+.certCard:hover {
+    background: rgba(96, 165, 250, 0.05);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+.certIcon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.certIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.certInfo {
+    flex: 1;
+    min-width: 0;
+}
+
+.certName {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.certIssuer {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+}
+
+/* ── Middle Column ── */
+.middleColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ── Stat Bars ── */
+.statsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.statHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statName {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.statScore {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.statBar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.statFill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    border-radius: 3px;
+    transition: width 1s ease-out;
+}
+
+/* ── Bio ── */
+.bioSection {
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.bioText {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Right Column ── */
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ── Inventory / Skills ── */
+.inventoryCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.85rem 0.85rem 1.2rem 0.85rem;
+}
+
+.skillCategory {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+}
+
+.skillCategory:first-child {
+    margin-top: 0;
+}
+
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.skillTag {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    background: rgba(96, 165, 250, 0.08);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.skillTag:hover {
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--text-color);
+    border-color: rgba(96, 165, 250, 0.3);
+}
+
+/* ── Quest Log (Work Experience) ── */
+.questCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.85rem;
+}
+
+.questEntry {
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px dotted var(--border-color);
+}
+
+.questEntry:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.questRole {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.questCompany {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    margin-top: 0.1rem;
+}
+
+/* ── Education Card ── */
+.educationCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.85rem;
+}
+
+.eduDegree {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.eduSchool {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
+    margin-top: 0.1rem;
+}
+
+/* ── Contact ── */
+.contactCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.85rem;
+}
+
+.contactLinks {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.contactLink {
+    color: var(--text-secondary);
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.contactLink:hover {
+    color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+.contactLink svg {
+    fill: currentColor;
+}
+
+/* ── Research Interests ── */
+.researchCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.85rem;
+}
+
+.researchItem {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+}
+
+.researchItem:last-child {
+    margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+    .profileGrid {
+        grid-template-columns: 180px 1fr;
+    }
+
+    .rightColumn {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .profileCard {
+        padding: 1rem;
+    }
+
+    .profileGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .leftColumn {
+        align-items: center;
+    }
+
+    .avatarFrame {
+        width: 160px;
+    }
+
+    .rightColumn {
+        grid-column: auto;
+    }
+}
