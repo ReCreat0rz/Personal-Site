@@ -22,6 +22,10 @@
   /* Soft Teal */
   --warning-color: #fbbf24;
   /* Warm Amber */
+  --gold: #d4a853;
+  /* Warm Gold Accent */
+  --gold-glow: rgba(212, 168, 83, 0.3);
+  /* Gold Glow Effect */
 
   --border-color: #1a2740;
   /* Blue-tinted Border */

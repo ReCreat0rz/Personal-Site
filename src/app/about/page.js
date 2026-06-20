@@ -75,11 +75,10 @@ export default function About() {
                     <span className={styles.screenHeaderLabel}>✦ CHARACTER PROFILE ✦</span>
                 </div>
 
-                {/* 3-Column Grid */}
+                {/* 2-Column Grid */}
                 <div className={styles.profileGrid}>
-                    {/* ── Left Column ── */}
+                    {/* ── Left Column (Portrait) ── */}
                     <div className={styles.leftColumn}>
-                        {/* Avatar */}
                         <div className={styles.avatarFrame}>
                             <Image
                                 src="/mornye-about.jpg"
@@ -91,13 +90,11 @@ export default function About() {
                             />
                         </div>
 
-                        {/* Name & Title */}
                         <div className={styles.nameBlock}>
                             <h1>REI</h1>
                             <p>Cyber Security Consultant I</p>
                         </div>
 
-                        {/* LV / XP Bar */}
                         <div className={styles.xpSection}>
                             <div className={styles.xpHeader}>
                                 <span className={styles.xpLevel}>LV. 20</span>
@@ -112,7 +109,6 @@ export default function About() {
                             <p className={styles.xpSubtitle}>Reverse Engineer</p>
                         </div>
 
-                        {/* Certifications */}
                         <div className={styles.certsSection}>
                             <p className={styles.sectionLabel}>CERTIFICATIONS</p>
                             {certifications.map((cert, i) => (
@@ -135,10 +131,10 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* ── Middle Column ── */}
-                    <div className={styles.middleColumn}>
+                    {/* ── Right Column (Info Panels) ── */}
+                    <div className={styles.rightColumn}>
                         {/* Stats */}
-                        <div>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>STATS</p>
                             <div className={styles.statsSection}>
                                 {stats.map((stat, i) => (
@@ -159,18 +155,15 @@ export default function About() {
                         </div>
 
                         {/* Bio */}
-                        <div className={styles.bioSection}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>BIO</p>
                             <p className={styles.bioText}>
-                                Cybersecurity Professional with 3+ years of experience and 150+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
+                                Cybersecurity Professional with 4+ years of experience and 150+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
                             </p>
                         </div>
-                    </div>
 
-                    {/* ── Right Column ── */}
-                    <div className={styles.rightColumn}>
                         {/* Inventory / Skills */}
-                        <div className={styles.inventoryCard}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>INVENTORY</p>
                             {skillCategories.map((cat, i) => (
                                 <div key={i}>
@@ -185,7 +178,7 @@ export default function About() {
                         </div>
 
                         {/* Quest Log */}
-                        <div className={styles.questCard}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>QUEST LOG</p>
                             {questLog.map((quest, i) => (
                                 <div key={i} className={styles.questEntry}>
@@ -196,14 +189,14 @@ export default function About() {
                         </div>
 
                         {/* Education */}
-                        <div className={styles.educationCard}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>EDUCATION</p>
                             <p className={styles.eduDegree}>Bachelor of Science (BS) in Information Systems Audit</p>
                             <p className={styles.eduSchool}>BINUS University · August 2018 – April 2022</p>
                         </div>
 
                         {/* Research Interests */}
-                        <div className={styles.researchCard}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>RESEARCH INTERESTS</p>
                             {researchInterests.map((interest, i) => (
                                 <p key={i} className={styles.researchItem}>• {interest}</p>
@@ -211,7 +204,7 @@ export default function About() {
                         </div>
 
                         {/* Contact */}
-                        <div className={styles.contactCard}>
+                        <div className={styles.infoPanel}>
                             <p className={styles.sectionLabel}>CONTACT</p>
                             <div className={styles.contactLinks}>
                                 <a href="https://github.com/recreat0rz" target="_blank" rel="noopener noreferrer" className={styles.contactLink} aria-label="GitHub">

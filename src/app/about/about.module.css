@@ -1,50 +1,66 @@
 /* ═══════════════════════════════════════════════════
-   RPG Character Profile — Celestial Theme
+   Wuthering Waves Character Profile — Celestial Theme
    ═══════════════════════════════════════════════════ */
 
 /* ── Main Card ── */
 .profileCard {
     background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(212, 168, 83, 0.25);
     border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: var(--glow-primary);
+    padding: 2rem;
     position: relative;
     overflow: hidden;
+    box-shadow:
+        0 0 30px rgba(96, 165, 250, 0.08),
+        inset 0 0 60px rgba(4, 8, 16, 0.5);
 }
 
+/* Top ornamental line */
 .profileCard::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 10%;
+    right: 10%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--primary-color), var(--accent-color), var(--primary-color), transparent);
-    opacity: 0.6;
+    background: linear-gradient(90deg, transparent, var(--gold), var(--primary-color), var(--gold), transparent);
+    opacity: 0.7;
+}
+
+/* Bottom ornamental line */
+.profileCard::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.3), transparent);
 }
 
 /* ── Screen Header ── */
 .screenHeader {
     text-align: center;
-    padding-bottom: 1rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 .screenHeaderLabel {
     font-family: var(--font-mono);
     font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    color: var(--text-secondary);
+    letter-spacing: 0.2em;
+    color: var(--gold);
     text-transform: uppercase;
+    text-shadow: 0 0 12px var(--gold-glow);
 }
 
 /* ── Profile Grid ── */
 .profileGrid {
     display: grid;
-    grid-template-columns: 200px 1.2fr 1.2fr;
-    gap: 2rem;
+    grid-template-columns: 300px 1fr;
+    gap: 2.5rem;
+    align-items: start;
 }
 
 /* ── Section Labels ── */
@@ -52,27 +68,74 @@
     font-family: var(--font-mono);
     font-size: 0.65rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--primary-color);
+    letter-spacing: 0.15em;
+    color: var(--gold);
     text-transform: uppercase;
     margin-bottom: 0.75rem;
-    text-shadow: var(--glow-text);
+    text-shadow: 0 0 8px var(--gold-glow);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-/* ── Left Column ── */
+.sectionLabel::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 6px var(--gold);
+}
+
+/* ── Left Column (Portrait) ── */
 .leftColumn {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    position: sticky;
+    top: 100px;
 }
 
+/* ── Avatar Frame ── */
 .avatarFrame {
     width: 100%;
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 0 20px rgba(96, 165, 250, 0.1);
+    border-radius: 10px;
+    border: 2px solid rgba(212, 168, 83, 0.3);
+    box-shadow:
+        0 0 20px rgba(96, 165, 250, 0.1),
+        0 0 40px rgba(212, 168, 83, 0.08),
+        inset 0 0 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Corner ornaments */
+.avatarFrame::before,
+.avatarFrame::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-color: var(--gold);
+    border-style: solid;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+.avatarFrame::before {
+    top: 6px;
+    left: 6px;
+    border-width: 2px 0 0 2px;
+    border-radius: 3px 0 0 0;
+}
+
+.avatarFrame::after {
+    bottom: 6px;
+    right: 6px;
+    border-width: 0 2px 2px 0;
+    border-radius: 0 0 3px 0;
 }
 
 .avatarFrame img {
@@ -81,32 +144,37 @@
     object-fit: cover;
 }
 
+/* ── Name Block ── */
 .nameBlock {
     text-align: center;
+    padding: 0.75rem 0;
+    border-top: 1px solid rgba(212, 168, 83, 0.15);
+    border-bottom: 1px solid rgba(212, 168, 83, 0.15);
 }
 
 .nameBlock h1 {
-    font-family: var(--font-mono);
-    font-size: 1.1rem;
+    font-family: var(--font-sans);
+    font-size: 1.8rem;
     font-weight: 800;
     color: var(--text-primary);
     margin: 0;
-    letter-spacing: -0.02em;
-    text-shadow: var(--glow-text);
+    letter-spacing: 0.05em;
+    text-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
 }
 
 .nameBlock p {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    color: var(--accent-color);
-    margin: 0.25rem 0 0 0;
+    font-size: 0.85rem;
+    color: var(--gold);
+    margin: 0.3rem 0 0 0;
+    letter-spacing: 0.05em;
 }
 
 /* ── XP Bar ── */
 .xpSection {
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
+    gap: 0.4rem;
 }
 
 .xpHeader {
@@ -117,56 +185,59 @@
 
 .xpLevel {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--gold);
+    text-shadow: 0 0 8px var(--gold-glow);
 }
 
 .xpValue {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: var(--text-secondary);
 }
 
 .xpBar {
-    height: 10px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 168, 83, 0.2);
+    border-radius: 6px;
     overflow: hidden;
     position: relative;
 }
 
 .xpFill {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
-    border-radius: 3px;
-    transition: width 1.2s ease-out;
+    background: linear-gradient(90deg, var(--gold), var(--primary-color), var(--accent-color));
+    border-radius: 5px;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 10px rgba(212, 168, 83, 0.3);
 }
 
 .xpSubtitle {
     font-family: var(--font-mono);
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     color: var(--text-secondary);
     text-align: center;
+    letter-spacing: 0.05em;
 }
 
 /* ── Certification Cards ── */
 .certsSection {
     padding-top: 0.75rem;
-    border-top: 1px solid var(--border-color);
 }
 
 .certCard {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
-    padding: 0.5rem;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
+    gap: 0.75rem;
+    padding: 0.6rem 0.7rem;
+    background: rgba(212, 168, 83, 0.03);
+    border: 1px solid rgba(212, 168, 83, 0.12);
+    border-left: 2px solid var(--gold);
     border-radius: 6px;
     margin-bottom: 0.5rem;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .certCard:last-child {
@@ -174,18 +245,23 @@
 }
 
 .certCard:hover {
-    background: rgba(96, 165, 250, 0.05);
-    border-color: rgba(96, 165, 250, 0.3);
+    background: rgba(212, 168, 83, 0.06);
+    border-color: rgba(212, 168, 83, 0.25);
+    border-left-color: var(--primary-color);
+    transform: translateX(3px);
 }
 
 .certIcon {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 168, 83, 0.15);
 }
 
 .certIcon img {
@@ -200,36 +276,52 @@
 }
 
 .certName {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
     color: var(--text-color);
     line-height: 1.4;
+    font-weight: 500;
 }
 
 .certIssuer {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     color: var(--text-secondary);
+    margin-top: 0.1rem;
 }
 
-/* ── Middle Column ── */
-.middleColumn {
+/* ── Right Column (Info Panels) ── */
+.rightColumn {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+/* ── Info Panel (shared) ── */
+.infoPanel {
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid var(--border-color);
+    border-left: 2px solid rgba(212, 168, 83, 0.3);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.infoPanel:hover {
+    border-left-color: var(--gold);
 }
 
 /* ── Stat Bars ── */
 .statsSection {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.85rem;
 }
 
 .statItem {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 0.35rem;
 }
 
 .statHeader {
@@ -239,71 +331,52 @@
 }
 
 .statName {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
     color: var(--text-color);
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
+    font-weight: 500;
 }
 
 .statScore {
     font-family: var(--font-mono);
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: var(--gold);
+    font-weight: 700;
+    text-shadow: 0 0 6px var(--gold-glow);
 }
 
 .statBar {
     height: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(212, 168, 83, 0.12);
     border-radius: 4px;
     overflow: hidden;
 }
 
 .statFill {
     height: 100%;
-    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    background: linear-gradient(90deg, var(--gold), var(--primary-color));
     border-radius: 3px;
-    transition: width 1s ease-out;
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 8px rgba(212, 168, 83, 0.2);
 }
 
 /* ── Bio ── */
-.bioSection {
-    padding-top: 1rem;
-    margin-top: 0.5rem;
-    border-top: 1px solid var(--border-color);
-}
-
 .bioText {
-    font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
     color: var(--text-secondary);
-    line-height: 1.7;
+    line-height: 1.8;
     margin: 0;
 }
 
-/* ── Right Column ── */
-.rightColumn {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 /* ── Inventory / Skills ── */
-.inventoryCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.85rem 0.85rem 1.2rem 0.85rem;
-}
-
 .skillCategory {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 0.4rem;
     margin-top: 1rem;
@@ -316,38 +389,32 @@
 .skillTags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.35rem;
+    gap: 0.4rem;
 }
 
 .skillTag {
     font-family: var(--font-mono);
     font-size: 0.65rem;
-    padding: 0.2rem 0.5rem;
-    background: rgba(96, 165, 250, 0.08);
-    border: 1px solid var(--border-color);
+    padding: 0.25rem 0.6rem;
+    background: rgba(96, 165, 250, 0.06);
+    border: 1px solid rgba(96, 165, 250, 0.15);
     border-radius: 4px;
     color: var(--text-secondary);
-    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .skillTag:hover {
-    background: rgba(96, 165, 250, 0.15);
+    background: rgba(96, 165, 250, 0.12);
     color: var(--text-color);
     border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-1px);
 }
 
 /* ── Quest Log (Work Experience) ── */
-.questCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.85rem;
-}
-
 .questEntry {
-    padding-bottom: 0.6rem;
-    margin-bottom: 0.6rem;
-    border-bottom: 1px dotted var(--border-color);
+    padding-bottom: 0.7rem;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px dotted rgba(212, 168, 83, 0.15);
 }
 
 .questEntry:last-child {
@@ -357,88 +424,72 @@
 }
 
 .questRole {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 700;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 600;
     color: var(--text-color);
 }
 
 .questCompany {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
-    color: var(--text-secondary);
-    margin-top: 0.1rem;
+    font-size: 0.68rem;
+    color: var(--gold);
+    margin-top: 0.15rem;
 }
 
 /* ── Education Card ── */
-.educationCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.85rem;
-}
-
 .eduDegree {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 700;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 600;
     color: var(--text-color);
 }
 
 .eduSchool {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.68rem;
+    color: var(--gold);
+    margin-top: 0.15rem;
+}
+
+/* ── Research Interests ── */
+.researchItem {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
     color: var(--text-secondary);
-    margin-top: 0.1rem;
+    margin-bottom: 0.35rem;
+}
+
+.researchItem:last-child {
+    margin-bottom: 0;
 }
 
 /* ── Contact ── */
-.contactCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.85rem;
-}
-
 .contactLinks {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.85rem;
     flex-wrap: wrap;
 }
 
 .contactLink {
     color: var(--text-secondary);
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: all 0.25s ease;
     display: flex;
     align-items: center;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid transparent;
 }
 
 .contactLink:hover {
-    color: var(--primary-color);
-    transform: translateY(-1px);
+    color: var(--gold);
+    border-color: rgba(212, 168, 83, 0.2);
+    background: rgba(212, 168, 83, 0.05);
+    transform: translateY(-2px);
 }
 
 .contactLink svg {
     fill: currentColor;
-}
-
-/* ── Research Interests ── */
-.researchCard {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.85rem;
-}
-
-.researchItem {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--text-secondary);
-    margin-bottom: 0.3rem;
-}
-
-.researchItem:last-child {
-    margin-bottom: 0;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -447,17 +498,18 @@
 
 @media (max-width: 1024px) {
     .profileGrid {
-        grid-template-columns: 180px 1fr;
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
     }
 
-    .rightColumn {
-        grid-column: 1 / -1;
+    .leftColumn {
+        position: static;
     }
 }
 
 @media (max-width: 768px) {
     .profileCard {
-        padding: 1rem;
+        padding: 1.25rem;
     }
 
     .profileGrid {
@@ -470,10 +522,23 @@
     }
 
     .avatarFrame {
-        width: 160px;
+        width: 180px;
+        aspect-ratio: 3 / 4;
     }
 
-    .rightColumn {
-        grid-column: auto;
+    .nameBlock h1 {
+        font-size: 1.5rem;
+    }
+
+    .nameBlock p {
+        font-size: 0.8rem;
+    }
+
+    .infoPanel {
+        padding: 1rem;
+    }
+
+    .statName, .certName, .questRole, .eduDegree {
+        font-size: 0.82rem;
     }
 }
