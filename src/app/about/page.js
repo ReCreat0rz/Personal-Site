@@ -109,7 +109,7 @@ export default function About() {
                                     style={{ width: animated ? '75%' : '0%' }}
                                 />
                             </div>
-                            <p className={styles.xpSubtitle}>Security Researcher</p>
+                            <p className={styles.xpSubtitle}>Reverse Engineer</p>
                         </div>
 
                         {/* Certifications */}
