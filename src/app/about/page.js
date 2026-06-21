@@ -98,7 +98,7 @@ export default function About() {
                     {}
                     <div className={styles.xpSection}>
                         <div className={styles.xpHeader}>
-                            <span className={styles.xpLevel}>LV. 20</span>
+                            <span className={styles.xpLevel}>UL. 20</span>
                             <span className={styles.xpValue}>XP: 10,000</span>
                         </div>
                         <div className={styles.xpBar}>
