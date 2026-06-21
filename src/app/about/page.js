@@ -81,7 +81,7 @@ export default function About() {
             <nav className={styles.tabBar}>
                 <a href="#attributes" className={`${styles.tab} ${styles.tabActive}`}>Attributes</a>
                 <a href="#forte" className={styles.tab}>Forte</a>
-                <a href="#equipped" className={styles.tab}>Equipped</a>
+                <a href="#certifications" className={styles.tab}>Certifications</a>
                 <a href="#echoes" className={styles.tab}>Echoes</a>
             </nav>
 
@@ -140,8 +140,8 @@ export default function About() {
                     </div>
 
                     {}
-                    <div id="equipped">
-                        <p className={styles.sectionLabel}>Equipped</p>
+                    <div id="certifications">
+                        <p className={styles.sectionLabel}>Certifications</p>
                         <div className={styles.certRow}>
                             {certifications.map((cert, i) => (
                                 <div key={i} className={styles.certCard}>
