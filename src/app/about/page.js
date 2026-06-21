@@ -197,7 +197,7 @@ export default function About() {
                 <div className={styles.echoesGrid}>
                     {}
                     <div className={styles.echoCard}>
-                        <p className={styles.echoLabel}>Quest Log</p>
+                        <p className={styles.echoLabel}>Work Experience Log</p>
                         {questLog.map((quest, i) => (
                             <div key={i} className={styles.questEntry}>
                                 <p className={styles.questRole}>{quest.role}</p>
