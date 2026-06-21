@@ -32,7 +32,7 @@ export default function Home() {
                 <div className={styles.introInfo}>
                     <h1 className={styles.introName}>ReCreat0rz</h1>
                     <div className={styles.introSubtitle}>
-                        <TypingAnimation words={["Reverse Engineer"]} />
+                        <TypingAnimation words={["Security Researcher"]} />
                     </div>
                 </div>
                 <div className={styles.introSocials}>
