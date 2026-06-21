@@ -67,7 +67,7 @@ const BackgroundMusic = () => {
   return (
     <audio 
       ref={audioRef}
-      src="/OST_Closers_Dungeon_Boss6.mkv"
+      src="/the_day_the_starlight_arrived.mp3"
       loop
       preload="auto"
       style={{ display: 'none' }}
