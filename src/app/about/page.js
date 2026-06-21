@@ -135,7 +135,7 @@ export default function About() {
                     <div className={styles.bioSection}>
                         <p className={styles.sectionLabel}>Bio</p>
                         <p className={styles.bioText}>
-                            Cybersecurity Professional with 3+ years of experience and 150+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
+                            Cybersecurity Professional with 3+ years of experience and 100+ completed penetration testing assessments across Web, API, Mobile, and Infrastructure, with 40% focusing on mobile application security and 35% focusing on Infrastructure Security. Specialized in delivering penetration testing services for clients across the financial services sector. Produced comprehensive technical security findings and formulated remediation plans for clients, successfully eliminating 70% of identified security findings within financial services sectors.
                         </p>
                     </div>
 
