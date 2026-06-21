@@ -40,7 +40,7 @@ export default function Projects() {
                 paddingBottom: '1rem',
                 display: 'inline-block'
             }}>
-                Projects
+                Work Projects
             </h1>
 
             <div className="projects-grid">

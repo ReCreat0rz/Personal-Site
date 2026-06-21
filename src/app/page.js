@@ -8,7 +8,7 @@ const navItems = [
     { icon: "📋", title: "About", subtitle: "Character Profile", href: "/about" },
     { icon: "💼", title: "Experience", subtitle: "Quest Log", href: "/experience" },
     { icon: "🔬", title: "Blog", subtitle: "Field Notes", href: "/blog" },
-    { icon: "🛠️", title: "Projects", subtitle: "Arsenal", href: "/projects" },
+    { icon: "🛠️", title: "Work Projects", subtitle: "Arsenal", href: "/projects" },
 ];
 
 export default function Home() {
