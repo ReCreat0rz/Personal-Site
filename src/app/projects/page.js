@@ -21,7 +21,14 @@ export default function Projects() {
     ];
 
     return (
-        <div className="container" style={{ padding: '4rem 2rem' }}>
+        <div className="container" style={{ padding: '2rem 2rem' }}>
+            {/* ── Back to Lobby ── */}
+            <div style={{ marginBottom: '1.5rem', display: 'flex' }}>
+                <Link href="/" className="back-lobby-link">
+                    <span>◀</span> Back to Lobby
+                </Link>
+            </div>
+
             <h1 style={{
                 marginBottom: '3rem',
                 fontSize: '2.5rem',

@@ -1,4 +1,5 @@
 import styles from './experience.module.css';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Experience | ReCreat0rz',
@@ -69,7 +70,14 @@ export default function Experience() {
     ];
 
     return (
-        <div className="container" style={{ padding: '4rem 2rem' }}>
+        <div className="container" style={{ padding: '2rem 2rem' }}>
+            {/* ── Back to Lobby ── */}
+            <div style={{ marginBottom: '1.5rem', display: 'flex' }}>
+                <Link href="/" className="back-lobby-link">
+                    <span>◀</span> Back to Lobby
+                </Link>
+            </div>
+
             <h1 className={styles.title}>Work Experience</h1>
             
             <div className={styles.timeline}>

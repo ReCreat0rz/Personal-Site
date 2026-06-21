@@ -1,0 +1,231 @@
+/* ═══════════════════════════════════════════════════
+   Wuthering Waves Home Page — Celestial Theme
+   ═══════════════════════════════════════════════════ */
+
+/* ── Page Container ── */
+.homePage {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem 1rem;
+}
+
+/* ── Cinematic Banner ── */
+.bannerWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1024 / 723; /* Exact aspect ratio of mornye-home.jpg (no cropping) */
+    max-height: 600px;   /* Cap height on larger screens */
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.bannerWrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, var(--bg-color), rgba(4, 8, 16, 0.6), transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bannerWrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(96, 165, 250, 0.15), transparent 50%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* ── Intro Card ── */
+.introCard {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.introCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), var(--accent-color), var(--primary-color), transparent);
+    opacity: 0.5;
+}
+
+.introInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.introName {
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+    text-shadow: var(--glow-text);
+    line-height: 1.1;
+    margin: 0;
+}
+
+.introSubtitle {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    letter-spacing: 0.02em;
+    min-height: 1.4em;
+}
+
+.introSocials {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.socialLink {
+    color: var(--text-secondary);
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: flex;
+    align-items: center;
+}
+
+.socialLink:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.socialLink svg {
+    fill: currentColor;
+}
+
+/* ── Navigation Grid ── */
+.navGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.navCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.25rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navCard:hover {
+    background: rgba(96, 165, 250, 0.05);
+    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(96, 165, 250, 0.1);
+    color: inherit;
+}
+
+.navIcon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.navTitle {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+}
+
+.navSubtitle {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/* ── Terminal Section ── */
+.terminalSection {
+    margin-top: 0.5rem;
+}
+
+/* ═══════════════════════════════════════════════════
+   Responsive
+   ═══════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+    .homePage {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+
+    .bannerWrapper {
+        border-radius: 10px;
+    }
+
+    .introCard {
+        padding: 1.25rem 1.25rem;
+        gap: 1rem;
+    }
+
+    .introName {
+        font-size: 1.5rem;
+    }
+
+    .navGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .introCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .introSocials {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .introName {
+        font-size: 1.3rem;
+    }
+}

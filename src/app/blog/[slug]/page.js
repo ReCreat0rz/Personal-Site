@@ -26,8 +26,8 @@ export default async function Post({ params }) {
     return (
         <article className="blog-article">
             <CodeHighlighter />
-            <Link href="/" style={{ fontSize: '0.9rem', color: '#666', marginBottom: '1rem', display: 'block' }}>
-                &larr; Back to Home
+            <Link href="/blog" className="back-lobby-link" style={{ marginBottom: '1.5rem' }}>
+                <span>◀</span> Back to Blog
             </Link>
 
             <header className="blog-header">

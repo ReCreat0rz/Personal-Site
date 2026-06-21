@@ -2,172 +2,88 @@
    Wuthering Waves Character Profile — Celestial Theme
    ═══════════════════════════════════════════════════ */
 
-/* ── Main Card ── */
-.profileCard {
-    background: var(--card-bg);
-    border: 1px solid rgba(212, 168, 83, 0.25);
-    border-radius: 12px;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow:
-        0 0 30px rgba(96, 165, 250, 0.08),
-        inset 0 0 60px rgba(4, 8, 16, 0.5);
+/* ── Page Container ── */
+.profilePage {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
-/* Top ornamental line */
-.profileCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 10%;
-    right: 10%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), var(--primary-color), var(--gold), transparent);
-    opacity: 0.7;
-}
-
-/* Bottom ornamental line */
-.profileCard::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 15%;
-    right: 15%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.3), transparent);
-}
-
-/* ── Screen Header ── */
-.screenHeader {
-    text-align: center;
-    padding-bottom: 1.25rem;
+/* ── Tab Bar ── */
+.tabBar {
+    display: flex;
+    gap: 0;
     margin-bottom: 2rem;
-    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-.screenHeaderLabel {
+.tab {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    text-decoration: none;
     text-transform: uppercase;
-    text-shadow: 0 0 12px var(--gold-glow);
 }
 
-/* ── Profile Grid ── */
-.profileGrid {
+.tab:hover {
+    color: var(--text-color);
+}
+
+.tabActive {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    text-shadow: var(--glow-text);
+}
+
+/* ── Hero Section (2-column) ── */
+.heroSection {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 380px;
     gap: 2.5rem;
     align-items: start;
+    margin-bottom: 2.5rem;
 }
 
-/* ── Section Labels ── */
-.sectionLabel {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    color: var(--gold);
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
-    text-shadow: 0 0 8px var(--gold-glow);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.sectionLabel::before {
-    content: '';
-    display: inline-block;
-    width: 4px;
-    height: 4px;
-    background: var(--gold);
-    border-radius: 50%;
-    box-shadow: 0 0 6px var(--gold);
-}
-
-/* ── Left Column (Portrait) ── */
-.leftColumn {
+/* ── Left Info Panel ── */
+.infoPanel {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    position: sticky;
-    top: 100px;
-}
-
-/* ── Avatar Frame ── */
-.avatarFrame {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 2px solid rgba(212, 168, 83, 0.3);
-    box-shadow:
-        0 0 20px rgba(96, 165, 250, 0.1),
-        0 0 40px rgba(212, 168, 83, 0.08),
-        inset 0 0 30px rgba(0, 0, 0, 0.3);
-    position: relative;
-}
-
-/* Corner ornaments */
-.avatarFrame::before,
-.avatarFrame::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-color: var(--gold);
-    border-style: solid;
-    z-index: 2;
-    opacity: 0.6;
-}
-
-.avatarFrame::before {
-    top: 6px;
-    left: 6px;
-    border-width: 2px 0 0 2px;
-    border-radius: 3px 0 0 0;
-}
-
-.avatarFrame::after {
-    bottom: 6px;
-    right: 6px;
-    border-width: 0 2px 2px 0;
-    border-radius: 0 0 3px 0;
-}
-
-.avatarFrame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    gap: 1.5rem;
 }
 
 /* ── Name Block ── */
 .nameBlock {
-    text-align: center;
-    padding: 0.75rem 0;
-    border-top: 1px solid rgba(212, 168, 83, 0.15);
-    border-bottom: 1px solid rgba(212, 168, 83, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .nameBlock h1 {
-    font-family: var(--font-sans);
-    font-size: 1.8rem;
+    font-family: var(--font-mono);
+    font-size: 2.2rem;
     font-weight: 800;
     color: var(--text-primary);
     margin: 0;
-    letter-spacing: 0.05em;
-    text-shadow: 0 0 20px rgba(96, 165, 250, 0.3);
+    letter-spacing: -0.03em;
+    text-shadow: var(--glow-text);
+    line-height: 1.1;
 }
 
 .nameBlock p {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    color: var(--gold);
-    margin: 0.3rem 0 0 0;
-    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    margin: 0;
+    letter-spacing: 0.02em;
 }
 
 /* ── XP Bar ── */
@@ -175,6 +91,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+    max-width: 320px;
 }
 
 .xpHeader {
@@ -185,10 +102,9 @@
 
 .xpLevel {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: var(--gold);
-    text-shadow: 0 0 8px var(--gold-glow);
+    color: var(--text-primary);
 }
 
 .xpValue {
@@ -198,120 +114,49 @@
 }
 
 .xpBar {
-    height: 12px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(212, 168, 83, 0.2);
-    border-radius: 6px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     overflow: hidden;
-    position: relative;
 }
 
 .xpFill {
     height: 100%;
-    background: linear-gradient(90deg, var(--gold), var(--primary-color), var(--accent-color));
-    border-radius: 5px;
-    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 10px rgba(212, 168, 83, 0.3);
+    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    border-radius: 4px;
+    transition: width 1.2s ease-out;
 }
 
 .xpSubtitle {
     font-family: var(--font-mono);
     font-size: 0.65rem;
     color: var(--text-secondary);
-    text-align: center;
-    letter-spacing: 0.05em;
 }
 
-/* ── Certification Cards ── */
-.certsSection {
-    padding-top: 0.75rem;
-}
-
-.certCard {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 0.6rem 0.7rem;
-    background: rgba(212, 168, 83, 0.03);
-    border: 1px solid rgba(212, 168, 83, 0.12);
-    border-left: 2px solid var(--gold);
-    border-radius: 6px;
-    margin-bottom: 0.5rem;
-    transition: all 0.25s ease;
-}
-
-.certCard:last-child {
-    margin-bottom: 0;
-}
-
-.certCard:hover {
-    background: rgba(212, 168, 83, 0.06);
-    border-color: rgba(212, 168, 83, 0.25);
-    border-left-color: var(--primary-color);
-    transform: translateX(3px);
-}
-
-.certIcon {
-    width: 38px;
-    height: 38px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(212, 168, 83, 0.15);
-}
-
-.certIcon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.certInfo {
-    flex: 1;
-    min-width: 0;
-}
-
-.certName {
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    color: var(--text-color);
-    line-height: 1.4;
-    font-weight: 500;
-}
-
-.certIssuer {
+/* ── Section Label ── */
+.sectionLabel {
     font-family: var(--font-mono);
-    font-size: 0.6rem;
-    color: var(--text-secondary);
-    margin-top: 0.1rem;
-}
-
-/* ── Right Column (Info Panels) ── */
-.rightColumn {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    text-shadow: var(--glow-text);
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-/* ── Info Panel (shared) ── */
-.infoPanel {
-    background: rgba(255, 255, 255, 0.015);
-    border: 1px solid var(--border-color);
-    border-left: 2px solid rgba(212, 168, 83, 0.3);
-    border-radius: 8px;
-    padding: 1.25rem;
-    transition: border-color 0.3s ease;
+.sectionLabel::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-color), transparent);
 }
 
-.infoPanel:hover {
-    border-left-color: var(--gold);
-}
-
-/* ── Stat Bars ── */
+/* ── Stats ── */
 .statsSection {
     display: flex;
     flex-direction: column;
@@ -331,52 +176,165 @@
 }
 
 .statName {
-    font-family: var(--font-sans);
-    font-size: 0.82rem;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
     color: var(--text-color);
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .statScore {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    color: var(--gold);
-    font-weight: 700;
-    text-shadow: 0 0 6px var(--gold-glow);
+    font-size: 0.78rem;
+    color: var(--text-secondary);
 }
 
 .statBar {
-    height: 8px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(212, 168, 83, 0.12);
-    border-radius: 4px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     overflow: hidden;
 }
 
 .statFill {
     height: 100%;
-    background: linear-gradient(90deg, var(--gold), var(--primary-color));
-    border-radius: 3px;
-    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 0 8px rgba(212, 168, 83, 0.2);
+    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+    border-radius: 4px;
+    transition: width 1s ease-out;
 }
 
 /* ── Bio ── */
+.bioSection {
+    margin-top: 0.25rem;
+}
+
 .bioText {
-    font-family: var(--font-sans);
-    font-size: 0.88rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
     color: var(--text-secondary);
-    line-height: 1.8;
+    line-height: 1.75;
     margin: 0;
 }
 
-/* ── Inventory / Skills ── */
+/* ── Equipped Certifications ── */
+.certRow {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.certCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 0.75rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    flex: 1;
+    min-width: 100px;
+}
+
+.certCard:hover {
+    background: rgba(96, 165, 250, 0.06);
+    border-color: rgba(96, 165, 250, 0.3);
+    transform: translateY(-2px);
+}
+
+.certIcon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.certName {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--text-secondary);
+    text-align: center;
+    line-height: 1.3;
+}
+
+.certYear {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* ── Portrait Frame ── */
+.portraitFrame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 682 / 1024; /* Native aspect ratio of mornye-about.jpg (no cropping) */
+    max-height: 650px;        /* Cap on desktop */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    background: linear-gradient(180deg, rgba(96, 165, 250, 0.03) 0%, rgba(129, 140, 248, 0.06) 100%);
+}
+
+.portraitFrame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(96, 165, 250, 0.2), rgba(129, 140, 248, 0.1), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.portraitFrame::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background: linear-gradient(to top, var(--card-bg), transparent);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.portraitFrame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+/* ── Full-Width Sections ── */
+.fullSection {
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ── Forte (Skills) ── */
 .skillCategory {
     font-family: var(--font-mono);
     font-size: 0.6rem;
     font-weight: 700;
     letter-spacing: 0.08em;
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-transform: uppercase;
     margin-bottom: 0.4rem;
     margin-top: 1rem;
@@ -394,27 +352,41 @@
 
 .skillTag {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     padding: 0.25rem 0.6rem;
-    background: rgba(96, 165, 250, 0.06);
-    border: 1px solid rgba(96, 165, 250, 0.15);
-    border-radius: 4px;
+    background: rgba(96, 165, 250, 0.08);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
     color: var(--text-secondary);
-    transition: all 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
 }
 
 .skillTag:hover {
-    background: rgba(96, 165, 250, 0.12);
+    background: rgba(96, 165, 250, 0.15);
     color: var(--text-color);
     border-color: rgba(96, 165, 250, 0.3);
     transform: translateY(-1px);
 }
 
-/* ── Quest Log (Work Experience) ── */
+/* ── Echoes Grid ── */
+.echoesGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.echoCard {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* ── Quest Log ── */
 .questEntry {
-    padding-bottom: 0.7rem;
-    margin-bottom: 0.7rem;
-    border-bottom: 1px dotted rgba(212, 168, 83, 0.15);
+    padding-bottom: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px dotted var(--border-color);
 }
 
 .questEntry:last-child {
@@ -424,40 +396,40 @@
 }
 
 .questRole {
-    font-family: var(--font-sans);
-    font-size: 0.88rem;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
     color: var(--text-color);
 }
 
 .questCompany {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
-    color: var(--gold);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
     margin-top: 0.15rem;
 }
 
-/* ── Education Card ── */
+/* ── Education ── */
 .eduDegree {
-    font-family: var(--font-sans);
-    font-size: 0.88rem;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 700;
     color: var(--text-color);
 }
 
 .eduSchool {
     font-family: var(--font-mono);
-    font-size: 0.68rem;
-    color: var(--gold);
+    font-size: 0.65rem;
+    color: var(--text-secondary);
     margin-top: 0.15rem;
 }
 
-/* ── Research Interests ── */
+/* ── Research ── */
 .researchItem {
-    font-family: var(--font-sans);
-    font-size: 0.82rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
     color: var(--text-secondary);
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.3rem;
 }
 
 .researchItem:last-child {
@@ -467,24 +439,19 @@
 /* ── Contact ── */
 .contactLinks {
     display: flex;
-    gap: 0.85rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .contactLink {
     color: var(--text-secondary);
-    transition: all 0.25s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
     display: flex;
     align-items: center;
-    padding: 0.4rem;
-    border-radius: 6px;
-    border: 1px solid transparent;
 }
 
 .contactLink:hover {
-    color: var(--gold);
-    border-color: rgba(212, 168, 83, 0.2);
-    background: rgba(212, 168, 83, 0.05);
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -492,53 +459,99 @@
     fill: currentColor;
 }
 
+/* ── Echo Card Label ── */
+.echoLabel {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    text-shadow: var(--glow-text);
+}
+
 /* ═══════════════════════════════════════════════════
    Responsive
    ═══════════════════════════════════════════════════ */
 
-@media (max-width: 1024px) {
-    .profileGrid {
-        grid-template-columns: 250px 1fr;
-        gap: 2rem;
-    }
-
-    .leftColumn {
-        position: static;
-    }
-}
-
-@media (max-width: 768px) {
-    .profileCard {
-        padding: 1.25rem;
-    }
-
-    .profileGrid {
+@media (max-width: 900px) {
+    .heroSection {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 
-    .leftColumn {
-        align-items: center;
+    .portraitFrame {
+        order: -1;
     }
 
-    .avatarFrame {
-        width: 180px;
-        aspect-ratio: 3 / 4;
+    .xpSection {
+        max-width: 100%;
+    }
+
+    .echoesGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .profilePage {
+        padding: 1rem 0.5rem;
+    }
+
+    .tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.7rem;
     }
 
     .nameBlock h1 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
-    .nameBlock p {
-        font-size: 0.8rem;
+    .certRow {
+        gap: 0.5rem;
     }
 
-    .infoPanel {
+    .certCard {
+        min-width: 80px;
+        padding: 0.5rem;
+    }
+
+    .certIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .fullSection {
         padding: 1rem;
     }
+}
 
-    .statName, .certName, .questRole, .eduDegree {
-        font-size: 0.82rem;
-    }
+/* ── Back to Lobby ── */
+.backLobby {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.25s ease;
+}
+
+.backLobby:hover {
+    color: var(--primary-color);
+    border-color: rgba(96, 165, 250, 0.3);
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.1);
+    text-decoration: none;
+}
+
+.backLobby:hover span {
+    transform: translateX(-3px);
 }

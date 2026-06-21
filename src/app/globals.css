@@ -436,3 +436,38 @@ pre code {
   letter-spacing: 0.05em;
   font-weight: 700;
 }
+
+/* ── Back to Lobby/Home Button ── */
+.back-lobby-link {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.25s ease;
+}
+
+.back-lobby-link:hover {
+    color: var(--primary-color);
+    border-color: rgba(96, 165, 250, 0.3);
+    background: rgba(96, 165, 250, 0.05);
+    box-shadow: 0 0 15px rgba(96, 165, 250, 0.1);
+    text-decoration: none;
+}
+
+.back-lobby-link span {
+    margin-right: 0.5rem;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.back-lobby-link:hover span {
+    transform: translateX(-3px);
+}

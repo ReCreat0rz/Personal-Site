@@ -1,11 +1,19 @@
 import PaginatedPostList from '../../components/PaginatedPostList';
 import { getSortedPostsData } from '@/lib/posts';
+import Link from 'next/link';
 
 export default function Posts() {
     const allPostsData = getSortedPostsData();
 
     return (
         <div className="container" style={{ padding: '2rem' }}>
+            {/* ── Back to Lobby ── */}
+            <div style={{ marginBottom: '1.5rem', display: 'flex' }}>
+                <Link href="/" className="back-lobby-link">
+                    <span>◀</span> Back to Lobby
+                </Link>
+            </div>
+
             <header style={{ marginBottom: '2.5rem' }}>
                 <h1 style={{
                     fontSize: '2.5rem',
