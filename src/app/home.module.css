@@ -1,20 +1,17 @@
-/* ═══════════════════════════════════════════════════
-   Wuthering Waves Home Page — Celestial Theme
-   ═══════════════════════════════════════════════════ */
 
-/* ── Page Container ── */
+
 .homePage {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 1rem 3rem 1rem;
 }
 
-/* ── Cinematic Banner ── */
+
 .bannerWrapper {
     position: relative;
     width: 100%;
-    aspect-ratio: 1024 / 723; /* Exact aspect ratio of mornye-home.jpg (no cropping) */
-    max-height: 600px;   /* Cap height on larger screens */
+    aspect-ratio: 1024 / 723; 
+    max-height: 600px;   
     overflow: hidden;
     border-radius: 14px;
     margin-bottom: 1.5rem;
@@ -55,7 +52,7 @@
     object-position: center center;
 }
 
-/* ── Intro Card ── */
+
 .introCard {
     background: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -129,7 +126,7 @@
     fill: currentColor;
 }
 
-/* ── Navigation Grid ── */
+
 .navGrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -181,14 +178,11 @@
     text-transform: uppercase;
 }
 
-/* ── Terminal Section ── */
+
 .terminalSection {
     margin-top: 0.5rem;
 }
 
-/* ═══════════════════════════════════════════════════
-   Responsive
-   ═══════════════════════════════════════════════════ */
 
 @media (max-width: 768px) {
     .homePage {

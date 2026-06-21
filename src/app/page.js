@@ -14,7 +14,7 @@ const navItems = [
 export default function Home() {
     return (
         <div className={styles.homePage}>
-            {/* ── Cinematic Banner ── */}
+            {}
             <div className={styles.bannerWrapper}>
                 <Image
                     src="/mornye-home.jpg"
@@ -27,7 +27,7 @@ export default function Home() {
                 />
             </div>
 
-            {/* ── Intro Card ── */}
+            {}
             <div className={styles.introCard}>
                 <div className={styles.introInfo}>
                     <h1 className={styles.introName}>ReCreat0rz</h1>
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* ── Navigation Cards ── */}
+            {}
             <div className={styles.navGrid}>
                 {navItems.map((item, i) => (
                     <Link key={i} href={item.href} className={styles.navCard}>
@@ -62,7 +62,7 @@ export default function Home() {
                 ))}
             </div>
 
-            {/* ── Terminal Quote ── */}
+            {}
             <div className={styles.terminalSection}>
                 <TerminalHero />
             </div>

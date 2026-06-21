@@ -12,7 +12,7 @@ const BackgroundMusic = () => {
 
     audio.volume = 0.4;
     
-    // One-time cleanup for legacy auth data
+    
     if (typeof window !== 'undefined') {
       localStorage.removeItem('password_attempts');
     }
@@ -33,8 +33,8 @@ const BackgroundMusic = () => {
 
     const handleInteraction = (e) => {
       console.log("User interaction detected, unlocking audio...");
-      // Mobile browsers (especially Safari) often require a direct .play() call 
-      // in the same tick as the interaction.
+      
+
       attemptPlay();
     };
 
@@ -43,14 +43,14 @@ const BackgroundMusic = () => {
       events.forEach(event => window.removeEventListener(event, handleInteraction));
     };
 
-    // 1. Initial attempt (might work on Desktop or some Android browsers)
+    
     attemptPlay();
 
-    // 2. Add interaction listeners for the "Audio Unlock"
+    
     const events = ['click', 'touchstart', 'touchend', 'mousedown', 'keydown'];
     events.forEach(event => window.addEventListener(event, handleInteraction));
 
-    // 3. Handle visibility changes (resume if tab was hidden and brought back)
+    
     const handleVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
         attemptPlay();
@@ -71,7 +71,8 @@ const BackgroundMusic = () => {
       loop
       preload="auto"
       style={{ display: 'none' }}
-      playsInline // Crucial for mobile behavior
+      playsInline 
+
     />
   );
 };

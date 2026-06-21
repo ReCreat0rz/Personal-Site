@@ -70,14 +70,14 @@ export default function About() {
 
     return (
         <div className={styles.profilePage}>
-            {/* ── Back to Lobby ── */}
+            {}
             <div style={{ marginBottom: '1.5rem', display: 'flex' }}>
                 <Link href="/" className={styles.backLobby}>
                     <span style={{ marginRight: '0.5rem', display: 'inline-block', transition: 'transform 0.2s' }}>◀</span> Back to Lobby
                 </Link>
             </div>
 
-            {/* ── Tab Bar ── */}
+            {}
             <nav className={styles.tabBar}>
                 <a href="#attributes" className={`${styles.tab} ${styles.tabActive}`}>Attributes</a>
                 <a href="#forte" className={styles.tab}>Forte</a>
@@ -85,17 +85,17 @@ export default function About() {
                 <a href="#echoes" className={styles.tab}>Echoes</a>
             </nav>
 
-            {/* ── Hero Section: Info + Portrait ── */}
+            {}
             <section id="attributes" className={styles.heroSection}>
-                {/* Left: Info Panel */}
+                {}
                 <div className={styles.infoPanel}>
-                    {/* Name & Title */}
+                    {}
                     <div className={styles.nameBlock}>
                         <h1>REI</h1>
                         <p>Cyber Security Consultant I</p>
                     </div>
 
-                    {/* LV / XP Bar */}
+                    {}
                     <div className={styles.xpSection}>
                         <div className={styles.xpHeader}>
                             <span className={styles.xpLevel}>LV. 20</span>
@@ -110,7 +110,7 @@ export default function About() {
                         <span className={styles.xpSubtitle}>Reverse Engineer</span>
                     </div>
 
-                    {/* Stats */}
+                    {}
                     <div>
                         <p className={styles.sectionLabel}>Stats</p>
                         <div className={styles.statsSection}>
@@ -131,7 +131,7 @@ export default function About() {
                         </div>
                     </div>
 
-                    {/* Bio */}
+                    {}
                     <div className={styles.bioSection}>
                         <p className={styles.sectionLabel}>Bio</p>
                         <p className={styles.bioText}>
@@ -139,7 +139,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    {/* Equipped Certifications */}
+                    {}
                     <div id="equipped">
                         <p className={styles.sectionLabel}>Equipped</p>
                         <div className={styles.certRow}>
@@ -162,7 +162,7 @@ export default function About() {
                     </div>
                 </div>
 
-                {/* Right: Character Portrait */}
+                {}
                 <div className={styles.portraitFrame}>
                     <Image
                         src="/mornye-about.jpg"
@@ -176,7 +176,7 @@ export default function About() {
                 </div>
             </section>
 
-            {/* ── Forte (Skills & Tools) ── */}
+            {}
             <section id="forte" className={styles.fullSection}>
                 <p className={styles.sectionLabel}>Forte</p>
                 {skillCategories.map((cat, i) => (
@@ -191,11 +191,11 @@ export default function About() {
                 ))}
             </section>
 
-            {/* ── Echoes (Quest Log, Education, Research, Contact) ── */}
+            {}
             <section id="echoes" className={styles.fullSection}>
                 <p className={styles.sectionLabel}>Echoes</p>
                 <div className={styles.echoesGrid}>
-                    {/* Quest Log */}
+                    {}
                     <div className={styles.echoCard}>
                         <p className={styles.echoLabel}>Quest Log</p>
                         {questLog.map((quest, i) => (
@@ -206,14 +206,14 @@ export default function About() {
                         ))}
                     </div>
 
-                    {/* Education */}
+                    {}
                     <div className={styles.echoCard}>
                         <p className={styles.echoLabel}>Education</p>
                         <p className={styles.eduDegree}>Bachelor of Science (BS) in Information Systems Audit</p>
                         <p className={styles.eduSchool}>BINUS University · August 2018 – April 2022</p>
                     </div>
 
-                    {/* Research Interests */}
+                    {}
                     <div className={styles.echoCard}>
                         <p className={styles.echoLabel}>Research Interests</p>
                         {researchInterests.map((interest, i) => (
@@ -221,7 +221,7 @@ export default function About() {
                         ))}
                     </div>
 
-                    {/* Contact */}
+                    {}
                     <div className={styles.echoCard}>
                         <p className={styles.echoLabel}>Contact</p>
                         <div className={styles.contactLinks}>

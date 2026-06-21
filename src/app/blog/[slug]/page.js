@@ -54,7 +54,7 @@ export default async function Post({ params }) {
                 )}
             </header>
 
-            {/* Mobile TOC - Shows only on mobile, below title */}
+            {}
             <div className="toc-mobile">
                 <TableOfContents contentHtml={postData.contentHtml} />
             </div>
@@ -84,7 +84,7 @@ export default async function Post({ params }) {
                     />
                 </div>
 
-                {/* Desktop TOC - Shows only on desktop, in sidebar */}
+                {}
                 <aside className="toc-desktop">
                     <TableOfContents contentHtml={postData.contentHtml} />
                 </aside>

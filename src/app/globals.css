@@ -1,49 +1,46 @@
 :root {
-  /* Celestial Theme */
+  
   --bg-color: #040810;
-  /* Deep Navy Black */
+  
   --card-bg: #0a1020;
-  /* Dark Navy Slate */
+  
 
-  /* Text - High Contrast & Readable */
   --text-color: #d4dff0;
-  /* Cooler Ice White */
+  
   --text-primary: #f0f4ff;
-  /* Blue-tinted Pure White */
+  
   --text-secondary: #7b93b8;
-  /* Muted Steel Blue */
+  
 
-  /* Celestial Accents */
   --primary-color: #60a5fa;
-  /* Celestial Blue */
+  
   --accent-color: #818cf8;
-  /* Soft Periwinkle */
+  
   --success-color: #34d399;
-  /* Soft Teal */
+  
   --warning-color: #fbbf24;
-  /* Warm Amber */
+  
   --gold: #d4a853;
-  /* Warm Gold Accent */
+  
   --gold-glow: rgba(212, 168, 83, 0.3);
-  /* Gold Glow Effect */
+  
 
   --border-color: #1a2740;
-  /* Blue-tinted Border */
+  
   --cyber-border: #60a5fa;
-  /* Glowing border color */
+  
 
-  /* Glow Effects */
   --glow-primary: 0 0 20px rgba(96, 165, 250, 0.15);
   --glow-text: 0 0 10px rgba(96, 165, 250, 0.3);
 
-  /* Modern clean fonts */
+  
   --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: var(--font-fira-code), monospace;
 
   --api-width: 800px;
   --header-height: 70px;
 
-  /* Celestial Starfield Background */
+  
   --bg-gradient: 
     radial-gradient(1px 1px at 20px 30px, #c8daf0, rgba(0,0,0,0)),
     radial-gradient(1px 1px at 40px 70px, #e0eaff, rgba(0,0,0,0)),
@@ -56,7 +53,6 @@
 }
 
 
-
 .container {
   width: 100%;
   max-width: 850px;
@@ -67,7 +63,7 @@
 @media (max-width: 768px) {
   .container {
     padding: 0 0.5rem;
-    /* Maximize width on mobile */
+    
   }
 }
 
@@ -79,7 +75,7 @@
 
 html,
 body {
-  /* Support for Safe Area Insets */
+  
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   padding-bottom: env(safe-area-inset-bottom);
@@ -89,14 +85,14 @@ body {
   background-image: var(--bg-gradient);
   background-size: var(--bg-size);
   background-attachment: fixed;
-  /* Keeps gradient in place while scrolling */
+  
   color: var(--text-color);
   font-family: var(--font-sans);
   line-height: 1.7;
-  /* Improved readability */
+  
   -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
-  /* Smooth theme transition */
+  
 }
 
 a {
@@ -119,13 +115,13 @@ h6 {
   font-weight: 700;
   letter-spacing: -0.01em;
   margin-bottom: 1.5rem;
-  /* Increased spacing */
+  
   line-height: 1.3;
 }
 
 h1 {
   color: var(--primary-color);
-  /* Cyber Cyan */
+  
   font-weight: 800;
   text-shadow: var(--glow-text);
   letter-spacing: -0.02em;
@@ -133,17 +129,17 @@ h1 {
 
 h2 {
   color: var(--accent-color);
-  /* Electric Purple */
+  
   margin-top: 2.5rem;
-  /* More space before sections */
+  
   border-bottom: 1px solid rgba(129, 140, 248, 0.3);
-  /* Subtle purple underline */
+  
   padding-bottom: 0.5rem;
 }
 
 h3 {
   color: var(--text-color);
-  /* Soft White */
+  
   margin-top: 2rem;
 }
 
@@ -155,10 +151,10 @@ h6 {
 
 p {
   margin-bottom: 1.5rem;
-  /* Better paragraph spacing */
+  
 }
 
-/* Make links in blog posts tidier and more visible */
+
 article a {
   color: var(--primary-color);
   text-decoration-thickness: 1px;
@@ -170,23 +166,23 @@ article a:hover {
   color: #fff;
 }
 
-/* Terminal-Style Code Blocks */
+
 pre {
   background: var(--card-bg);
-  /* Dark Tech Slate */
+  
   border: 1px solid var(--border-color);
   border-left: 2px solid var(--primary-color);
-  /* Cyber accent on left */
+  
   border-radius: 8px;
   padding: 3rem 1.5rem 1.5rem 1.5rem;
-  /* Top padding for window controls */
+  
   position: relative;
   overflow-x: auto;
   margin: 2rem 0;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Window controls (Red, Yellow, Green dots) */
+
 pre::before {
   content: "";
   position: absolute;
@@ -195,13 +191,13 @@ pre::before {
   width: 12px;
   height: 12px;
   background: #ff5f56;
-  /* Red */
+  
   border-radius: 50%;
   box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
-  /* Yellow, Green */
+  
 }
 
-/* Styling for code inside pre blocks */
+
 pre code {
   background: transparent !important;
   padding: 0 !important;
@@ -211,11 +207,11 @@ pre code {
   font-size: 0.9em;
 }
 
-/* Inline code styling */
+
 :not(pre)>code {
   font-family: var(--font-mono);
   background: rgba(96, 165, 250, 0.1);
-  /* Transparent Cyan tint */
+  
   padding: 0.2rem 0.4rem;
   border-radius: 4px;
   color: var(--primary-color);
@@ -223,11 +219,11 @@ pre code {
   border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
-/* Scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  /* For horizontal scrollbar in pre blocks */
+  
 }
 
 ::-webkit-scrollbar-track {
@@ -240,7 +236,7 @@ pre code {
   border: 1px solid var(--bg-color);
 }
 
-/* Blog Post Layout */
+
 .blog-content img {
   max-width: 100%;
   height: auto;
@@ -257,7 +253,7 @@ pre code {
   position: relative;
 }
 
-/* Table of Contents */
+
 .toc {
   position: sticky;
   top: 100px;
@@ -298,17 +294,17 @@ pre code {
   color: var(--primary-color);
 }
 
-/* Mobile TOC - Hidden on desktop */
+
 .toc-mobile {
   display: none;
 }
 
-/* Desktop TOC - Shown on desktop */
+
 .toc-desktop {
   display: block;
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 1024px) {
   .blog-layout {
     grid-template-columns: 1fr;
@@ -317,12 +313,12 @@ pre code {
     flex-direction: column;
   }
 
-  /* Hide desktop TOC on mobile */
+  
   .toc-desktop {
     display: none;
   }
 
-  /* Show mobile TOC below title */
+  
   .toc-mobile {
     display: block;
     margin-bottom: 2rem;
@@ -342,13 +338,13 @@ pre code {
     margin-bottom: 0;
   }
 
-  /* Fix fileRow display for mobile if needed */
+  
   .fileRow {
     display: block;
   }
 }
 
-/* Responsive Blog Layout Classes */
+
 .blog-article {
   max-width: 1100px;
   margin: 0 auto;
@@ -376,12 +372,12 @@ pre code {
   .blog-header {
     margin-bottom: 2rem;
     padding: 0 0.5rem;
-    /* Slight padding for alignment */
+    
   }
 
   .blog-title {
     font-size: 2rem;
-    /* Reduced from 2.5 but still large enough */
+    
     line-height: 1.2;
   }
 
@@ -397,11 +393,11 @@ pre code {
   p,
   li {
     font-size: 1.1rem;
-    /* Increased for better readability */
+    
     line-height: 1.6;
   }
 
-  /* Improve search input on mobile */
+  
   input[type="text"] {
     font-size: 16px;
     padding: 0.8rem;
@@ -427,7 +423,7 @@ pre code {
   transition: all 0.3s ease;
 }
 
-/* ASCII Subtitle Default (Desktop) */
+
 .ascii-subtitle {
   display: block;
   margin-top: 1.5rem;
@@ -437,7 +433,7 @@ pre code {
   font-weight: 700;
 }
 
-/* ── Back to Lobby/Home Button ── */
+
 .back-lobby-link {
     display: inline-flex;
     align-items: center;

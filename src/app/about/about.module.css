@@ -1,15 +1,12 @@
-/* ═══════════════════════════════════════════════════
-   Wuthering Waves Character Profile — Celestial Theme
-   ═══════════════════════════════════════════════════ */
 
-/* ── Page Container ── */
+
 .profilePage {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-/* ── Tab Bar ── */
+
 .tabBar {
     display: flex;
     gap: 0;
@@ -44,7 +41,7 @@
     text-shadow: var(--glow-text);
 }
 
-/* ── Hero Section (2-column) ── */
+
 .heroSection {
     display: grid;
     grid-template-columns: 1fr 380px;
@@ -53,14 +50,14 @@
     margin-bottom: 2.5rem;
 }
 
-/* ── Left Info Panel ── */
+
 .infoPanel {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-/* ── Name Block ── */
+
 .nameBlock {
     display: flex;
     flex-direction: column;
@@ -86,7 +83,7 @@
     letter-spacing: 0.02em;
 }
 
-/* ── XP Bar ── */
+
 .xpSection {
     display: flex;
     flex-direction: column;
@@ -134,7 +131,7 @@
     color: var(--text-secondary);
 }
 
-/* ── Section Label ── */
+
 .sectionLabel {
     font-family: var(--font-mono);
     font-size: 0.7rem;
@@ -156,7 +153,7 @@
     background: linear-gradient(90deg, var(--border-color), transparent);
 }
 
-/* ── Stats ── */
+
 .statsSection {
     display: flex;
     flex-direction: column;
@@ -205,7 +202,7 @@
     transition: width 1s ease-out;
 }
 
-/* ── Bio ── */
+
 .bioSection {
     margin-top: 0.25rem;
 }
@@ -218,7 +215,7 @@
     margin: 0;
 }
 
-/* ── Equipped Certifications ── */
+
 .certRow {
     display: flex;
     gap: 0.75rem;
@@ -274,12 +271,12 @@
     opacity: 0.6;
 }
 
-/* ── Portrait Frame ── */
+
 .portraitFrame {
     position: relative;
     width: 100%;
-    aspect-ratio: 682 / 1024; /* Native aspect ratio of mornye-about.jpg (no cropping) */
-    max-height: 650px;        /* Cap on desktop */
+    aspect-ratio: 682 / 1024; 
+    max-height: 650px;        
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid var(--border-color);
@@ -319,7 +316,7 @@
     object-position: top center;
 }
 
-/* ── Full-Width Sections ── */
+
 .fullSection {
     background: rgba(255, 255, 255, 0.015);
     border: 1px solid var(--border-color);
@@ -328,7 +325,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* ── Forte (Skills) ── */
+
 .skillCategory {
     font-family: var(--font-mono);
     font-size: 0.6rem;
@@ -368,7 +365,7 @@
     transform: translateY(-1px);
 }
 
-/* ── Echoes Grid ── */
+
 .echoesGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -382,7 +379,7 @@
     padding: 1rem;
 }
 
-/* ── Quest Log ── */
+
 .questEntry {
     padding-bottom: 0.6rem;
     margin-bottom: 0.6rem;
@@ -409,7 +406,7 @@
     margin-top: 0.15rem;
 }
 
-/* ── Education ── */
+
 .eduDegree {
     font-family: var(--font-mono);
     font-size: 0.78rem;
@@ -424,7 +421,7 @@
     margin-top: 0.15rem;
 }
 
-/* ── Research ── */
+
 .researchItem {
     font-family: var(--font-mono);
     font-size: 0.75rem;
@@ -436,7 +433,7 @@
     margin-bottom: 0;
 }
 
-/* ── Contact ── */
+
 .contactLinks {
     display: flex;
     gap: 1rem;
@@ -459,7 +456,7 @@
     fill: currentColor;
 }
 
-/* ── Echo Card Label ── */
+
 .echoLabel {
     font-family: var(--font-mono);
     font-size: 0.6rem;
@@ -471,9 +468,6 @@
     text-shadow: var(--glow-text);
 }
 
-/* ═══════════════════════════════════════════════════
-   Responsive
-   ═══════════════════════════════════════════════════ */
 
 @media (max-width: 900px) {
     .heroSection {
@@ -527,7 +521,7 @@
     }
 }
 
-/* ── Back to Lobby ── */
+
 .backLobby {
     display: inline-flex;
     align-items: center;
