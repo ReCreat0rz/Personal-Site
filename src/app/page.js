@@ -6,7 +6,7 @@ import styles from "./home.module.css";
 
 const navItems = [
     { icon: "📋", title: "About", subtitle: "Character Profile", href: "/about" },
-    { icon: "💼", title: "Experience", subtitle: "Work Experience Log", href: "/experience" },
+    { icon: "💼", title: "Experience", subtitle: "Journey Log", href: "/experience" },
     { icon: "🔬", title: "Blog", subtitle: "Field Notes", href: "/blog" },
     { icon: "🛠️", title: "Projects", subtitle: "Arsenal", href: "/projects" },
 ];
