@@ -34,14 +34,6 @@ export default function Experience() {
     const workshops = [
         {
             company: 'DEFCON Singapore',
-            role: 'ICS Village',
-            period: 'March 2026',
-            description: [
-                'Applied critical thinking and hands-on experimentation with simulated ICS hardware to analyze industrial water-pipe system operations. Successfully completed the challenge by leveraging OSINT techniques to unlock PIN to gain access to water-pipe system operations and reconfiguring the water-pipe system to restore normal flow operations.'
-            ]
-        },
-        {
-            company: 'DEFCON Singapore',
             role: 'Car Hacking Village',
             period: 'March 2026',
             description: [
