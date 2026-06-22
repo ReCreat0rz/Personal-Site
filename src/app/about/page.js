@@ -9,7 +9,7 @@ const stats = [
     { name: '🛡️ Penetration Testing', score: 85 },
     { name: '📱 iOS Security', score: 40 },
     { name: '⚙️ Reverse Engineering', score: 40 },
-    { name: '🔧 Vehicle Security', score: 5 },
+    { name: '🚗 Vehicle Security', score: 5 },
 ];
 
 const certifications = [
