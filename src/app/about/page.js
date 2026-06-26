@@ -240,6 +240,15 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+                <div className={styles.echoesPhoto}>
+                    <Image
+                        src="/defcon-creator-stage.jpg"
+                        alt="Rei at DEF CON Creator Stage"
+                        width={1200}
+                        height={1600}
+                        sizes="(max-width: 900px) calc(100vw - 3rem), 1000px"
+                    />
+                </div>
             </section>
         </div>
     );
